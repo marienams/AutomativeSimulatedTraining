@@ -21,19 +21,15 @@ public class PlaceEquipment : MonoBehaviour
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+        PlaceObject();
     }
 
-    static bool GetUserTap(out Vector2 touchPosition)
+    bool GetUserTap(out Vector2 touchPosition)
     {
         if(Input.touchCount > 0)
         {
@@ -57,5 +53,5 @@ public class PlaceEquipment : MonoBehaviour
         }
     }
 
-    List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 }
