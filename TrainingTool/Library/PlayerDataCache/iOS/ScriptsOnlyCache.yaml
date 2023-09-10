@@ -14,8 +14,6 @@ ScriptsOnlyBuild:
     - Unity.Tutorials.Core.Editor.TutorialStyles
     - Unity.Tutorials.Core.Editor.TutorialWelcomePage
     - Unity.Tutorials.Core.Editor.TutorialWindow
-    Unity.XR.ARCore.Editor.dll:
-    - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
@@ -93,27 +91,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1634}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1778}
+      Script: {instanceID: 1780}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 4520}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4618}
     - Class: 114
-      Script: {instanceID: 7402}
+      Script: {instanceID: 6902}
     - Class: 114
-      Script: {instanceID: 8700}
+      Script: {instanceID: 7418}
     - Class: 114
-      Script: {instanceID: 9528}
+      Script: {instanceID: 8718}
     - Class: 114
-      Script: {instanceID: 10102}
+      Script: {instanceID: 9548}
     - Class: 114
-      Script: {instanceID: 10282}
+      Script: {instanceID: 10122}
     - Class: 114
-      Script: {instanceID: 25740}
+      Script: {instanceID: 10302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -945,6 +943,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 9f444120d2f115182a9b4d93b5fc5bff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaceEquipment
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1459,12 +1463,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 9f444120d2f115182a9b4d93b5fc5bff
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlaceEquipment
   platform: 9
   scenePathNames:
   - Assets/Scenes/Main.unity

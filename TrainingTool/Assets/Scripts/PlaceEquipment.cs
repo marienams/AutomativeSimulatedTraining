@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -8,8 +9,8 @@ using UnityEngine.XR.ARSubsystems;
 public class PlaceEquipment : MonoBehaviour
 {
     [SerializeField] private GameObject equipment;
-
-
+    
+    [SerializeField] private Text debugText;
     private ARRaycastManager arRaycastManager;
 
     public GameObject Equipment
@@ -26,10 +27,15 @@ public class PlaceEquipment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlaceObject();
+        if (GetUserTap(out Vector2 touchPosition))
+        {
+      
+            debugText.text = "tap detected";
+
+        }
     }
 
-    bool GetUserTap(out Vector2 touchPosition)
+    public bool GetUserTap(out Vector2 touchPosition)
     {
         if(Input.touchCount > 0)
         {
