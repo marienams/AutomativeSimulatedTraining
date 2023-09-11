@@ -25,6 +25,7 @@ public class PlaceEquipment : MonoBehaviour
         arRaycastManager = GetComponent<ARRaycastManager>();
         arPlaneManager = GetComponent<ARPlaneManager>();
         isAddingEquipment = false;
+        arPlaneManager.enabled = false;
     }
     
 
@@ -65,7 +66,7 @@ public class PlaceEquipment : MonoBehaviour
             var hitPose = hits[0].pose;
             Instantiate(equipment, hitPose.position, hitPose.rotation);
             isAddingEquipment = false;
-
+            arPlaneManager.enabled = false;
             foreach (ARPlane plane in arPlaneManager.trackables)
             {
                 plane.gameObject.SetActive(false);
@@ -79,12 +80,13 @@ public class PlaceEquipment : MonoBehaviour
     public void AddEquipment()
     {
         isAddingEquipment = true;
-        
-            
+
+        arPlaneManager.enabled = true;
         foreach(ARPlane plane in arPlaneManager.trackables)
-            {
+        {
                 plane.gameObject.SetActive(true);
         }
+
         
     }
 
