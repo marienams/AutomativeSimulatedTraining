@@ -9,9 +9,11 @@ using UnityEngine.XR.ARSubsystems;
 public class PlaceEquipment : MonoBehaviour
 {
     [SerializeField] private GameObject equipment;
-    
+    bool isAddingEquipment;
     [SerializeField] private Text debugText;
-    private ARRaycastManager arRaycastManager;
+    [SerializeField]private ARRaycastManager arRaycastManager;
+    [SerializeField] private ARPlaneManager arPlaneManager;
+    [SerializeField] private Button addEquipmentBtn;
 
     public GameObject Equipment
     {
@@ -21,18 +23,23 @@ public class PlaceEquipment : MonoBehaviour
     void Awake()
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
+        arPlaneManager = GetComponent<ARPlaneManager>();
+        isAddingEquipment = false;
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        if (GetUserTap(out Vector2 touchPosition))
+        PlaceObject();
+        if(addEquipmentBtn!= null)
         {
-      
-            debugText.text = "tap detected";
-
+            
+            addEquipmentBtn.onClick.AddListener(AddEquipment);
+            
         }
+        
+        
     }
 
     public bool GetUserTap(out Vector2 touchPosition)
@@ -54,10 +61,32 @@ public class PlaceEquipment : MonoBehaviour
             return;
         if(arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
+            debugText.text = "tapped";
             var hitPose = hits[0].pose;
             Instantiate(equipment, hitPose.position, hitPose.rotation);
+            isAddingEquipment = false;
+
+            foreach (ARPlane plane in arPlaneManager.trackables)
+            {
+                plane.gameObject.SetActive(false);
+            }
+
         }
+        
+        
     }
 
-    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    public void AddEquipment()
+    {
+        isAddingEquipment = true;
+        
+            
+        foreach(ARPlane plane in arPlaneManager.trackables)
+            {
+                plane.gameObject.SetActive(true);
+            }
+        
+    }
+
+    public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 }
