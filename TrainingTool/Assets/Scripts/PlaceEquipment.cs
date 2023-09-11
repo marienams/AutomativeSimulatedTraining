@@ -84,7 +84,7 @@ public class PlaceEquipment : MonoBehaviour
         foreach(ARPlane plane in arPlaneManager.trackables)
             {
                 plane.gameObject.SetActive(true);
-            }
+        }
         
     }
 
