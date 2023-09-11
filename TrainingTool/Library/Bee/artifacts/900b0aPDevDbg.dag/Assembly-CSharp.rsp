@@ -329,6 +329,8 @@
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/ExampleAssets/Scripts/AnchorCreator.cs"
 "Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
+"Assets/Scripts/DataManager.cs"
+"Assets/Scripts/EquipmentButtonManager.cs"
 "Assets/Scripts/PlaceEquipment.cs"
 -langversion:9.0
 

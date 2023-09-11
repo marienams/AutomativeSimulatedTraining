@@ -44,25 +44,39 @@ extern void ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69
 extern void ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6 (void);
 // 0x00000010 System.Void ARFeatheredPlaneMeshVisualizer::.cctor()
 extern void ARFeatheredPlaneMeshVisualizer__cctor_mF4BA6DDB611A3FD966C8B9494AE6B3EB8647CEAD (void);
-// 0x00000011 UnityEngine.GameObject PlaceEquipment::get_Equipment()
-extern void PlaceEquipment_get_Equipment_mDD2A6E851DDCF87718C0A74D714EC36F4A4DFB0A (void);
-// 0x00000012 System.Void PlaceEquipment::set_Equipment(UnityEngine.GameObject)
-extern void PlaceEquipment_set_Equipment_m0F4DCC9E522320D34B465AE1C2452B08DB20D729 (void);
-// 0x00000013 System.Void PlaceEquipment::Awake()
+// 0x00000011 DataManager DataManager::get_Instance()
+extern void DataManager_get_Instance_mEB8C1EF2CD8D075A9975D68BA41B51B291478BB5 (void);
+// 0x00000012 System.Void DataManager::Start()
+extern void DataManager_Start_m29149084C328BA04088BB5398109A6107C41F1D4 (void);
+// 0x00000013 System.Void DataManager::Update()
+extern void DataManager_Update_m11CFD8D41031CFD57FAFAA2FDC724881200965E6 (void);
+// 0x00000014 System.Void DataManager::.ctor()
+extern void DataManager__ctor_mD735B7F80F3DE13E2BB45118CDA7FA619330DCDA (void);
+// 0x00000015 System.Void EquipmentButtonManager::Start()
+extern void EquipmentButtonManager_Start_m783F365E6973D4E0F83A4315713A206466A4A961 (void);
+// 0x00000016 System.Void EquipmentButtonManager::Update()
+extern void EquipmentButtonManager_Update_m0562CE65428F88852C5422FB1C84D397F54DD101 (void);
+// 0x00000017 System.Void EquipmentButtonManager::SetEquipment()
+extern void EquipmentButtonManager_SetEquipment_mEFA6860018788BF557FBC03AEA8C9B1672284D17 (void);
+// 0x00000018 System.Void EquipmentButtonManager::.ctor()
+extern void EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD594047C (void);
+// 0x00000019 System.Void PlaceEquipment::Awake()
 extern void PlaceEquipment_Awake_mF465FCB9C3395CA01B7A5266EBD92C77947B0729 (void);
-// 0x00000014 System.Void PlaceEquipment::Update()
+// 0x0000001A System.Void PlaceEquipment::Update()
 extern void PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF (void);
-// 0x00000015 System.Boolean PlaceEquipment::GetUserTap(UnityEngine.Vector2&)
+// 0x0000001B System.Boolean PlaceEquipment::GetUserTap(UnityEngine.Vector2&)
 extern void PlaceEquipment_GetUserTap_mE85368596C0DE0DBDFD9BEB13B995E9C41F77721 (void);
-// 0x00000016 System.Void PlaceEquipment::PlaceObject()
+// 0x0000001C System.Void PlaceEquipment::PlaceObject()
 extern void PlaceEquipment_PlaceObject_mCDFCD72DDA3239E80E2BE9A179AF9F6116AF2C69 (void);
-// 0x00000017 System.Void PlaceEquipment::AddEquipment()
-extern void PlaceEquipment_AddEquipment_m34ED36BB460CCF025BD00489B4923985AC3618B0 (void);
-// 0x00000018 System.Void PlaceEquipment::.ctor()
+// 0x0000001D System.Void PlaceEquipment::AddDetection()
+extern void PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C (void);
+// 0x0000001E System.Boolean PlaceEquipment::TouchIsOverUI(UnityEngine.Touch)
+extern void PlaceEquipment_TouchIsOverUI_m982703770C3D156AACDCD2DDFD0C0CE3A047F020 (void);
+// 0x0000001F System.Void PlaceEquipment::.ctor()
 extern void PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5 (void);
-// 0x00000019 System.Void PlaceEquipment::.cctor()
+// 0x00000020 System.Void PlaceEquipment::.cctor()
 extern void PlaceEquipment__cctor_mE3743B815FC8468DA10FC898DC03C8A4BD46A777 (void);
-static Il2CppMethodPointer s_methodPointers[25] = 
+static Il2CppMethodPointer s_methodPointers[32] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -80,49 +94,63 @@ static Il2CppMethodPointer s_methodPointers[25] =
 	ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69CD8C7C8CCE56209AB321FEF5,
 	ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6,
 	ARFeatheredPlaneMeshVisualizer__cctor_mF4BA6DDB611A3FD966C8B9494AE6B3EB8647CEAD,
-	PlaceEquipment_get_Equipment_mDD2A6E851DDCF87718C0A74D714EC36F4A4DFB0A,
-	PlaceEquipment_set_Equipment_m0F4DCC9E522320D34B465AE1C2452B08DB20D729,
+	DataManager_get_Instance_mEB8C1EF2CD8D075A9975D68BA41B51B291478BB5,
+	DataManager_Start_m29149084C328BA04088BB5398109A6107C41F1D4,
+	DataManager_Update_m11CFD8D41031CFD57FAFAA2FDC724881200965E6,
+	DataManager__ctor_mD735B7F80F3DE13E2BB45118CDA7FA619330DCDA,
+	EquipmentButtonManager_Start_m783F365E6973D4E0F83A4315713A206466A4A961,
+	EquipmentButtonManager_Update_m0562CE65428F88852C5422FB1C84D397F54DD101,
+	EquipmentButtonManager_SetEquipment_mEFA6860018788BF557FBC03AEA8C9B1672284D17,
+	EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD594047C,
 	PlaceEquipment_Awake_mF465FCB9C3395CA01B7A5266EBD92C77947B0729,
 	PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF,
 	PlaceEquipment_GetUserTap_mE85368596C0DE0DBDFD9BEB13B995E9C41F77721,
 	PlaceEquipment_PlaceObject_mCDFCD72DDA3239E80E2BE9A179AF9F6116AF2C69,
-	PlaceEquipment_AddEquipment_m34ED36BB460CCF025BD00489B4923985AC3618B0,
+	PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C,
+	PlaceEquipment_TouchIsOverUI_m982703770C3D156AACDCD2DDFD0C0CE3A047F020,
 	PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5,
 	PlaceEquipment__cctor_mE3743B815FC8468DA10FC898DC03C8A4BD46A777,
 };
-static const int32_t s_InvokerIndices[25] = 
+static const int32_t s_InvokerIndices[32] = 
 {
-	5439,
-	4393,
-	5547,
-	5547,
-	5547,
-	5547,
-	8723,
-	5483,
-	4428,
-	5547,
-	5547,
-	5547,
-	4270,
-	4393,
-	5547,
-	8723,
-	5439,
-	4393,
-	5547,
-	5547,
+	5440,
+	4394,
+	5548,
+	5548,
+	5548,
+	5548,
+	8724,
+	5484,
+	4429,
+	5548,
+	5548,
+	5548,
+	4271,
+	4394,
+	5548,
+	8724,
+	8685,
+	5548,
+	5548,
+	5548,
+	5548,
+	5548,
+	5548,
+	5548,
+	5548,
+	5548,
 	2873,
-	5547,
-	5547,
-	5547,
-	8723,
+	5548,
+	5548,
+	3097,
+	5548,
+	8724,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	25,
+	32,
 	s_methodPointers,
 	0,
 	NULL,

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -8,23 +9,19 @@ using UnityEngine.XR.ARSubsystems;
 [RequireComponent(typeof(ARRaycastManager))]
 public class PlaceEquipment : MonoBehaviour
 {
-    [SerializeField] private GameObject equipment;
-    bool isAddingEquipment;
+    private Touch touch;
+    
     [SerializeField] private Text debugText;
     [SerializeField]private ARRaycastManager arRaycastManager;
     [SerializeField] private ARPlaneManager arPlaneManager;
     [SerializeField] private Button addEquipmentBtn;
 
-    public GameObject Equipment
-    {
-        get {return equipment; }
-        set {equipment = value; }
-    }
+    
     void Awake()
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
         arPlaneManager = GetComponent<ARPlaneManager>();
-        isAddingEquipment = false;
+        
         arPlaneManager.enabled = false;
     }
     
@@ -32,18 +29,26 @@ public class PlaceEquipment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        touch = Input.GetTouch(0);
+        if (touch.tapCount < 0 || touch.phase != TouchPhase.Began)
+            return;
+
+        if (TouchIsOverUI(touch))
+            return;
+
         PlaceObject();
+
         if(addEquipmentBtn!= null)
         {
-            
-            addEquipmentBtn.onClick.AddListener(AddEquipment);
-            
+            addEquipmentBtn.onClick.AddListener(AddDetection);
         }
+
+        
         
         
     }
 
-    public bool GetUserTap(out Vector2 touchPosition)
+    bool GetUserTap(out Vector2 touchPosition)
     {
         if(Input.touchCount > 0)
         {
@@ -64,8 +69,8 @@ public class PlaceEquipment : MonoBehaviour
         {
             debugText.text = "tapped";
             var hitPose = hits[0].pose;
-            Instantiate(equipment, hitPose.position, hitPose.rotation);
-            isAddingEquipment = false;
+            Instantiate(DataManager.Instance.equipment, hitPose.position, hitPose.rotation);
+
             arPlaneManager.enabled = false;
             foreach (ARPlane plane in arPlaneManager.trackables)
             {
@@ -77,18 +82,27 @@ public class PlaceEquipment : MonoBehaviour
         
     }
 
-    public void AddEquipment()
+    public void AddDetection()
     {
-        isAddingEquipment = true;
-
+        
         arPlaneManager.enabled = true;
         foreach(ARPlane plane in arPlaneManager.trackables)
         {
                 plane.gameObject.SetActive(true);
         }
 
-        
     }
 
+    
+
     public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
+    bool TouchIsOverUI(Touch touch)
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = new Vector2(touch.position.x, touch.position.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        return results.Count > 0;
+    }
 }

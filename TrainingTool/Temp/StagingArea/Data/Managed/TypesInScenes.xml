@@ -1,6 +1,8 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ARFeatheredPlaneMeshVisualizer" preserve="nothing"/>
+		<type fullname="DataManager" preserve="nothing"/>
+		<type fullname="EquipmentButtonManager" preserve="nothing"/>
 		<type fullname="PlaceEquipment" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
