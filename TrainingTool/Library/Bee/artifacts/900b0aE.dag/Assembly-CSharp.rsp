@@ -394,8 +394,10 @@
 "Assets/ExampleAssets/Scripts/AnchorCreator.cs"
 "Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
 "Assets/Scripts/DataManager.cs"
+"Assets/Scripts/Equipment.cs"
 "Assets/Scripts/EquipmentButtonManager.cs"
 "Assets/Scripts/PlaceEquipment.cs"
+"Assets/Scripts/UseEquipment.cs"
 -langversion:9.0
 
 /deterministic

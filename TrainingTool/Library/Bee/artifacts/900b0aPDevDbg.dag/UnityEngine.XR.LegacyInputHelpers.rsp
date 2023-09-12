@@ -306,10 +306,10 @@
 -r:"/Users/mahimasingh/Documents/GitHub/AutomativeSimulatedTraining/TrainingTool/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/ArmModels/ArmModel.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/ArmModels/SwingArmModel.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/ArmModels/TransitionArmModel.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/CameraOffset.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/ArmModels/ArmModel.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/ArmModels/SwingArmModel.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/ArmModels/TransitionArmModel.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/CameraOffset.cs"
 -langversion:9.0
 
 /deterministic

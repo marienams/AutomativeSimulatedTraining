@@ -305,6 +305,7 @@
 -r:"/Users/mahimasingh/Documents/GitHub/AutomativeSimulatedTraining/TrainingTool/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
 -r:"/Users/mahimasingh/Documents/GitHub/AutomativeSimulatedTraining/TrainingTool/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.InputSystem.ref.dll"
+-r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.Services.Core.ref.dll"
@@ -319,6 +320,8 @@
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.ARKit.FaceTracking.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.ARKit.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.ARSubsystems.ref.dll"
+-r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.CoreUtils.ref.dll"
+-r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.Interaction.Toolkit.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.InteractionSubsystems.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.Management.ref.dll"
 -r:"Library/Bee/artifacts/900b0aPDevDbg.dag/Unity.XR.OpenXR.Features.ConformanceAutomation.ref.dll"
@@ -330,8 +333,10 @@
 "Assets/ExampleAssets/Scripts/AnchorCreator.cs"
 "Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
 "Assets/Scripts/DataManager.cs"
+"Assets/Scripts/Equipment.cs"
 "Assets/Scripts/EquipmentButtonManager.cs"
 "Assets/Scripts/PlaceEquipment.cs"
+"Assets/Scripts/UseEquipment.cs"
 -langversion:9.0
 
 /deterministic

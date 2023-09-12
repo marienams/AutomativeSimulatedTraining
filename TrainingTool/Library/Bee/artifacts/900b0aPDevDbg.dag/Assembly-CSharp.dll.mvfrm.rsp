@@ -1,4 +1,5 @@
 Library/Bee/artifacts/mvdfrm/Unity.InputSystem.ref.dll_26C502BC1A8A5613.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Mathematics.ref.dll_1286155B92FA8CE0.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Services.Core.Analytics.ref.dll_1967FB5AE1C3F9D1.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Services.Core.Environments.ref.dll_F4B54762E2732CFB.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Services.Core.ref.dll_D4D024A9536520E9.mvfrm
@@ -13,6 +14,8 @@ Library/Bee/artifacts/mvdfrm/Unity.XR.ARFoundation.ref.dll_5C9E82969A715DA2.mvfr
 Library/Bee/artifacts/mvdfrm/Unity.XR.ARKit.FaceTracking.ref.dll_EBC012DDEF1F9EDB.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.XR.ARKit.ref.dll_0554A7553935EF2D.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.XR.ARSubsystems.ref.dll_F722717BFA166743.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.XR.CoreUtils.ref.dll_CC2EB625E2BCDC4A.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.XR.Interaction.Toolkit.ref.dll_89F56B4011DB5D6A.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.XR.InteractionSubsystems.ref.dll_CCE1F47B83B5074E.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.XR.Management.ref.dll_02011BA6BB404F21.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.XR.OpenXR.Features.ConformanceAutomation.ref.dll_736CB13FEB19660D.mvfrm
