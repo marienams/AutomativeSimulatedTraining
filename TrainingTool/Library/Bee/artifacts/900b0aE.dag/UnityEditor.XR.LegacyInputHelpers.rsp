@@ -121,6 +121,7 @@
 -define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:UNITY_XR_ARKIT_LOADER_ENABLED
+-define:XRI_PRESENT
 -define:ISX_PRESENT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -356,12 +357,12 @@
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Editor/ArmModels/ArmModelEditor.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Editor/ArmModels/SwingArmModelEditor.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Editor/ArmModels/TransitionArmModelEditor.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Editor/CameraOffsetEditor.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Editor/MenuUtils.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Editor/SeedXRInputBindings/SeedXRInputBindings.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Editor/ArmModels/ArmModelEditor.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Editor/ArmModels/SwingArmModelEditor.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Editor/ArmModels/TransitionArmModelEditor.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Editor/CameraOffsetEditor.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Editor/MenuUtils.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Editor/SeedXRInputBindings/SeedXRInputBindings.cs"
 -langversion:9.0
 
 /deterministic

@@ -343,10 +343,10 @@
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/ArmModels/ArmModel.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/ArmModels/SwingArmModel.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/ArmModels/TransitionArmModel.cs"
-"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.9/Runtime/CameraOffset.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/ArmModels/ArmModel.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/ArmModels/SwingArmModel.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/ArmModels/TransitionArmModel.cs"
+"Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.10/Runtime/CameraOffset.cs"
 -langversion:9.0
 
 /deterministic
