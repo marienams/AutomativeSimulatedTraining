@@ -82,8 +82,8 @@ extern void PlaceEquipment_GetUserTap_mE85368596C0DE0DBDFD9BEB13B995E9C41F77721 
 extern void PlaceEquipment_PlaceObject_mCDFCD72DDA3239E80E2BE9A179AF9F6116AF2C69 (void);
 // 0x00000023 System.Void PlaceEquipment::AddDetection()
 extern void PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C (void);
-// 0x00000024 System.Void PlaceEquipment::EquipmentSetting()
-extern void PlaceEquipment_EquipmentSetting_m8DE7159FEFF742A8C41CA9475C5EAFC4D2FAEAB5 (void);
+// 0x00000024 System.Void PlaceEquipment::DisplayEquipmentSetting()
+extern void PlaceEquipment_DisplayEquipmentSetting_mC43378BC1DCC5E3758E2519D730100A2F624D3C2 (void);
 // 0x00000025 System.Boolean PlaceEquipment::TouchIsOverUI(UnityEngine.Touch)
 extern void PlaceEquipment_TouchIsOverUI_m982703770C3D156AACDCD2DDFD0C0CE3A047F020 (void);
 // 0x00000026 System.Void PlaceEquipment::useEquipment()
@@ -135,7 +135,7 @@ static Il2CppMethodPointer s_methodPointers[43] =
 	PlaceEquipment_GetUserTap_mE85368596C0DE0DBDFD9BEB13B995E9C41F77721,
 	PlaceEquipment_PlaceObject_mCDFCD72DDA3239E80E2BE9A179AF9F6116AF2C69,
 	PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C,
-	PlaceEquipment_EquipmentSetting_m8DE7159FEFF742A8C41CA9475C5EAFC4D2FAEAB5,
+	PlaceEquipment_DisplayEquipmentSetting_mC43378BC1DCC5E3758E2519D730100A2F624D3C2,
 	PlaceEquipment_TouchIsOverUI_m982703770C3D156AACDCD2DDFD0C0CE3A047F020,
 	PlaceEquipment_useEquipment_m92511E83865B63ECE500BF11EAC607AE094BA387,
 	PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5,

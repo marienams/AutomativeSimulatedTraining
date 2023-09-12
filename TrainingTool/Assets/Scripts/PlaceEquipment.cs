@@ -80,7 +80,7 @@ public class PlaceEquipment : MonoBehaviour
             isAddingEquipment = false;
             var hitPose = hits[0].pose;
             Instantiate(DataManager.Instance.GetEquipment(), hitPose.position, hitPose.rotation);
-            EquipmentSetting();
+            DisplayEquipmentSetting();
             arPlaneManager.enabled = false;
             foreach (ARPlane plane in arPlaneManager.trackables)
             {
@@ -105,10 +105,9 @@ public class PlaceEquipment : MonoBehaviour
     }
 
 
-    void EquipmentSetting()
+    void DisplayEquipmentSetting()
     {
-        Button child = Instantiate(DataManager.Instance.setting_Btn);
-        child.transform.parent = mainCanvas.transform;
+        Instantiate(DataManager.Instance.setting_Btn, mainCanvas.transform);
     }
 
 
