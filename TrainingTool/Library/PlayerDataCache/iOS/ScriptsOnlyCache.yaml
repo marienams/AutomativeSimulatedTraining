@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - DataManager
     - Equipment
     - EquipmentButtonManager
+    - Parameters
     - PlaceEquipment
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
@@ -17,6 +18,7 @@ ScriptsOnlyBuild:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -82,11 +84,14 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
     UnityEngine.XR.MagicLeap.dll:
     - UnityEngine.XR.MagicLeap.MagicLeapSettings
   serializedClasses:
@@ -106,6 +111,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
@@ -171,6 +181,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3736}
     - Class: 114
+      Script: {instanceID: 3794}
+    - Class: 114
       Script: {instanceID: 4542}
     - Class: 114
       Script: {instanceID: 4758}
@@ -201,9 +213,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7278}
     - Class: 114
+      Script: {instanceID: 7634}
+    - Class: 114
       Script: {instanceID: 7654}
     - Class: 114
       Script: {instanceID: 8068}
+    - Class: 114
+      Script: {instanceID: 8912}
     - Class: 114
       Script: {instanceID: 9118}
     - Class: 114
@@ -223,6 +239,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11580}
     - Class: 114
+      Script: {instanceID: 11658}
+    - Class: 114
       Script: {instanceID: 11708}
     - Class: 114
       Script: {instanceID: 11948}
@@ -238,6 +256,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13532}
     - Class: 114
       Script: {instanceID: 29486}
+    - Class: 114
+      Script: {instanceID: 65760}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -717,7 +737,7 @@ ScriptsOnlyBuild:
     className: AROcclusionManager
   - hash:
       serializedVersion: 2
-      Hash: 70b44c77a55f8ae60985ddd331acfbc3
+      Hash: 6b739b8229a308f33131515b8c07a652
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataManager
@@ -1425,7 +1445,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 6b21134dbf9a62bbd7a17e03e7016e0d
+      Hash: 3b22749753db3c285301ebcdd4a0c73b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaceEquipment
@@ -2229,10 +2249,22 @@ ScriptsOnlyBuild:
     className: UseEquipment
   - hash:
       serializedVersion: 2
-      Hash: 10cb230722b3015f9f79262aeb916257
+      Hash: 3167c2b3e7c4f1eadceb6c17bb1af766
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Equipment
+  - hash:
+      serializedVersion: 2
+      Hash: b803c231d00a3071f4262a04c3e12524
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StationEquipmentManager
+  - hash:
+      serializedVersion: 2
+      Hash: 03488b1b99dde41d44f7d8b875e0fd22
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Parameters
   platform: 9
   scenePathNames:
   - Assets/Scenes/Main.unity
