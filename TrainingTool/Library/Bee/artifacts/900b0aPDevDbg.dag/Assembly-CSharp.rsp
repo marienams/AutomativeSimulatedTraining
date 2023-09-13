@@ -335,7 +335,9 @@
 "Assets/Scripts/DataManager.cs"
 "Assets/Scripts/Equipment.cs"
 "Assets/Scripts/EquipmentButtonManager.cs"
+"Assets/Scripts/Parameters.cs"
 "Assets/Scripts/PlaceEquipment.cs"
+"Assets/Scripts/StationEquipmentManager.cs"
 "Assets/Scripts/UseEquipment.cs"
 -langversion:9.0
 

@@ -13,11 +13,13 @@ public class PlaceEquipment : MonoBehaviour
     bool isAddingEquipment;
     private Vector2 touchPosition;
     [SerializeField] private Camera arCamera;
-    [SerializeField] private Canvas mainCanvas;
+    //[SerializeField] private Canvas mainCanvas;
     [SerializeField] private Text debugText;
      private ARRaycastManager arRaycastManager;
      private ARPlaneManager arPlaneManager;
     [SerializeField] private Button addEquipmentBtn;
+
+    public GameObject StationEquipmentContainer;
 
     public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -80,13 +82,15 @@ public class PlaceEquipment : MonoBehaviour
             isAddingEquipment = false;
             var hitPose = hits[0].pose;
             Instantiate(DataManager.Instance.GetEquipment(), hitPose.position, hitPose.rotation);
-            DisplayEquipmentSetting();
+            
             arPlaneManager.enabled = false;
             foreach (ARPlane plane in arPlaneManager.trackables)
             {
                 plane.gameObject.SetActive(false);
             }
             debugText.text = isAddingEquipment.ToString();
+            Parameters.Instance.ParameterList(DataManager.Instance.equipmentObj);
+            //DisplayEquipmentSetting();
         }
 
 
@@ -94,6 +98,7 @@ public class PlaceEquipment : MonoBehaviour
 
     public void AddDetection()
     {
+        
         isAddingEquipment = true;
         arPlaneManager.enabled = true;
         foreach (ARPlane plane in arPlaneManager.trackables)
@@ -101,15 +106,11 @@ public class PlaceEquipment : MonoBehaviour
             plane.gameObject.SetActive(true);
         }
         debugText.text = isAddingEquipment.ToString();
-
+        
     }
 
 
-    void DisplayEquipmentSetting()
-    {
-        Instantiate(DataManager.Instance.setting_Btn, mainCanvas.transform);
-    }
-
+    
 
     bool TouchIsOverUI(Touch touch)
     {

@@ -52,6 +52,7 @@ public class EquipmentButtonManager : MonoBehaviour
     void SelectEquipment()
     {
         DataManager.Instance.SetEquipment(equipment_id);
+        
         //DataManager.Instance.equipment = equipmentModel;
         //DataManager.Instance.equipment_Btn = equipment_Btn;
     }

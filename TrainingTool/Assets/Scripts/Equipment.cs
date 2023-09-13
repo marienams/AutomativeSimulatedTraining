@@ -6,9 +6,11 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "Equipment", menuName = "AddEquipment/Equipment")]
 public class Equipment : ScriptableObject
 {
-    
+    // Tags: Stationary, Security, Electric
     //[SerializeField] public Button optionsBtn;
     public GameObject equipmentPrefab;
-    public Button Setting;
+    public GameObject Setting;
     public Sprite equipment_icon;
+    public string EquipmentSettingState;
+    
 }

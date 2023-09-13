@@ -5,16 +5,26 @@ using UnityEngine.UI;
 
 public class DataManager : MonoBehaviour
 {
+
+    // ----- EQUIPMENT LIST --------- //
     private GameObject equipment;
-    public Button setting_Btn;
+    
+    public Equipment equipmentObj;
     //public Button equipmentOptionsBtn;
 
     [SerializeField] private EquipmentButtonManager _equipmentButtonManagerPrefab;
     [SerializeField] private GameObject _equimentButtonContainer;
 
     [SerializeField] private List<Equipment> equipments;
-
+    
+    [SerializeField] private Text debugText;
+    
     private int current_id = 0;
+
+    public GameObject settingCanvas;
+    [SerializeField]private GameObject setting_Btn;
+    [SerializeField] private GameObject StationEquipmentContainer;
+
 
     private static DataManager instance;
     public static DataManager Instance
@@ -59,12 +69,24 @@ public class DataManager : MonoBehaviour
     {
         equipment = equipments[id].equipmentPrefab;
         setting_Btn = equipments[id].Setting;
+        equipmentObj = equipments[id];
     }
+    
+    
+
 
     public GameObject GetEquipment()
     {
         return equipment;
     }
 
-    
+    public GameObject SettingsParameters()
+    {
+        return settingCanvas;
+    }
+    /*public void CreateParameters()
+    {
+        Parameters.Instance.Input = setting_Btn;
+        Parameters.Instance.CreateParameter(setting_Btn);
+    }*/
 }

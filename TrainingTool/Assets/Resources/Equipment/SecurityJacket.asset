@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentPrefab: {fileID: 8259182291453408524, guid: 16ac128afd87b45a2842dd67b1544154,
     type: 3}
-  Setting: {fileID: 226981051689691288, guid: 52b94192832b9406f81a58dd90a65480, type: 3}
+  Setting: {fileID: 2775957048691022946, guid: b996760bb289c4d57bc625a7937fe168, type: 3}
   equipment_icon: {fileID: 21300000, guid: 571bbd20f44ae41c7a11b738f0d53eef, type: 3}
+  EquipmentSettingState: Security
