@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba7050f561234b2ea88a03b2f7ec737, type: 3}
   m_Name: WeldingTable
   m_EditorClassIdentifier: 
-  equipmentPrefab: {fileID: 6710573830463245181, guid: 47d4e2b1055714300bd24938c1a7f56c,
+  equipmentPrefab: {fileID: 3522397434912385038, guid: 47d4e2b1055714300bd24938c1a7f56c,
     type: 3}
-  Setting: {fileID: 226981051689691290, guid: 67d6a67a5cec54fcab162dee3b323dde, type: 3}
+  Setting: {fileID: 1286331168505747601, guid: 67d6a67a5cec54fcab162dee3b323dde, type: 3}
   equipment_icon: {fileID: 21300000, guid: b09b657e370db4a52b44dfa3a9a26c12, type: 3}
   EquipmentSettingState: Stationary
+  Parameters: {fileID: 0}

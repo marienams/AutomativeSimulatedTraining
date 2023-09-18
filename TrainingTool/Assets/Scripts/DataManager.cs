@@ -22,7 +22,7 @@ public class DataManager : MonoBehaviour
     private int current_id = 0;
 
     public GameObject settingCanvas;
-    [SerializeField]private GameObject setting_Btn;
+    [SerializeField]private StationButtonManager setting_Btn;
     [SerializeField] private GameObject StationEquipmentContainer;
 
 

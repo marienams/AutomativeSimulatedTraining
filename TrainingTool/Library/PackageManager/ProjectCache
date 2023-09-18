@@ -1510,6 +1510,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 6.0.0-pre.3
     compatible:
     - 4.2.3
     - 4.2.6
@@ -1651,6 +1652,7 @@ m_ResolvedPackages:
     - 2.4.1
     - 2.4.3
     - 2.5.0
+    - 2.5.1
     compatible:
     - 0.0.6-preview
     - 0.9.0-preview
@@ -1687,6 +1689,7 @@ m_ResolvedPackages:
     - 2.4.1
     - 2.4.3
     - 2.5.0
+    - 2.5.1
     verified: 
   dependencies:
   - name: com.unity.inputsystem
@@ -4666,6 +4669,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 6.0.0-pre.3
     compatible:
     - 4.2.3
     - 4.2.6
@@ -4886,6 +4890,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 6.0.0-pre.3
     compatible:
     - 4.2.3
     - 4.2.6

@@ -398,8 +398,8 @@
 "Assets/Scripts/EquipmentButtonManager.cs"
 "Assets/Scripts/Parameters.cs"
 "Assets/Scripts/PlaceEquipment.cs"
-"Assets/Scripts/StationEquipmentManager.cs"
-"Assets/Scripts/UseEquipment.cs"
+"Assets/Scripts/StationButtonManager.cs"
+"Assets/Scripts/TIGWelderMenu.cs"
 -langversion:9.0
 
 /deterministic

@@ -78,43 +78,51 @@ extern void EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD59404
 extern void Parameters_get_Instance_m27AA99EA19188A5988239B8303597D3003113F40 (void);
 // 0x00000021 System.Void Parameters::Update()
 extern void Parameters_Update_m5CC638D5350217B86CD69BE29DB5BA6CD3C54C46 (void);
-// 0x00000022 System.Void Parameters::CreateParameter()
-extern void Parameters_CreateParameter_m89819338CD8107A7A6879BF945042D5113B4C1A2 (void);
+// 0x00000022 System.Void Parameters::CreateParameter(Equipment)
+extern void Parameters_CreateParameter_mD14E59985EDE8673085B809CDC045D96761B6A26 (void);
 // 0x00000023 System.Void Parameters::ParameterList(Equipment)
 extern void Parameters_ParameterList_mEBBA7A2266D11A084784A037AF95D2490DA68F86 (void);
-// 0x00000024 System.Void Parameters::.ctor()
+// 0x00000024 System.Void Parameters::SetParameters()
+extern void Parameters_SetParameters_m25A56C907A028D9B3A21FA5EDD04247DB92D8EAC (void);
+// 0x00000025 System.Void Parameters::.ctor()
 extern void Parameters__ctor_m5ED02B3440BF76F017E2037F7B6BB06524AA0EE0 (void);
-// 0x00000025 System.Void PlaceEquipment::Start()
+// 0x00000026 System.Void PlaceEquipment::Start()
 extern void PlaceEquipment_Start_mF5A783D71E27541400A0E00527CE20D4B31B5532 (void);
-// 0x00000026 System.Void PlaceEquipment::Update()
+// 0x00000027 System.Void PlaceEquipment::Update()
 extern void PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF (void);
-// 0x00000027 System.Boolean PlaceEquipment::GetUserTap(UnityEngine.Vector2&)
+// 0x00000028 System.Boolean PlaceEquipment::GetUserTap(UnityEngine.Vector2&)
 extern void PlaceEquipment_GetUserTap_mE85368596C0DE0DBDFD9BEB13B995E9C41F77721 (void);
-// 0x00000028 System.Void PlaceEquipment::PlaceObject()
+// 0x00000029 System.Void PlaceEquipment::PlaceObject()
 extern void PlaceEquipment_PlaceObject_mCDFCD72DDA3239E80E2BE9A179AF9F6116AF2C69 (void);
-// 0x00000029 System.Void PlaceEquipment::AddDetection()
+// 0x0000002A System.Void PlaceEquipment::AddDetection()
 extern void PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C (void);
-// 0x0000002A System.Boolean PlaceEquipment::TouchIsOverUI(UnityEngine.Touch)
+// 0x0000002B System.Boolean PlaceEquipment::TouchIsOverUI(UnityEngine.Touch)
 extern void PlaceEquipment_TouchIsOverUI_m982703770C3D156AACDCD2DDFD0C0CE3A047F020 (void);
-// 0x0000002B System.Void PlaceEquipment::useEquipment()
+// 0x0000002C System.Void PlaceEquipment::useEquipment()
 extern void PlaceEquipment_useEquipment_m92511E83865B63ECE500BF11EAC607AE094BA387 (void);
-// 0x0000002C System.Void PlaceEquipment::.ctor()
+// 0x0000002D System.Void PlaceEquipment::.ctor()
 extern void PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5 (void);
-// 0x0000002D System.Void PlaceEquipment::.cctor()
+// 0x0000002E System.Void PlaceEquipment::.cctor()
 extern void PlaceEquipment__cctor_mE3743B815FC8468DA10FC898DC03C8A4BD46A777 (void);
-// 0x0000002E System.Void StationEquipmentManager::set_Icon(UnityEngine.Sprite)
-extern void StationEquipmentManager_set_Icon_m90FE3730F8ECB8FAA32A3CE9CC56C50F11609454 (void);
-// 0x0000002F System.Void StationEquipmentManager::Start()
-extern void StationEquipmentManager_Start_m5B851CD4BF61709A1D1DB5CFED0DBD0C8A5B8B1E (void);
-// 0x00000030 System.Void StationEquipmentManager::.ctor()
-extern void StationEquipmentManager__ctor_m43802FAADA1A34E69A866A1148D9940BB531D6D7 (void);
-// 0x00000031 System.Void UseEquipment::Start()
-extern void UseEquipment_Start_m577B61B1D60050EBAF2FB7C5A80FA39567F0F7B6 (void);
-// 0x00000032 System.Void UseEquipment::Update()
-extern void UseEquipment_Update_mA8CF808CA2EC8A64A276225F326091EBF68429D4 (void);
-// 0x00000033 System.Void UseEquipment::.ctor()
-extern void UseEquipment__ctor_mB4385C350F18539113A688F37833B95625648B20 (void);
-static Il2CppMethodPointer s_methodPointers[51] = 
+// 0x0000002F System.Void StationButtonManager::Start()
+extern void StationButtonManager_Start_m74F2B6E4B2597D08D5EE95AD37B5BAFB32260D79 (void);
+// 0x00000030 System.Void StationButtonManager::Update()
+extern void StationButtonManager_Update_mCBEAF6EFC90E67B8A5DD3A8C70B0A41758CE6461 (void);
+// 0x00000031 System.Void StationButtonManager::SetParameter(UnityEngine.GameObject)
+extern void StationButtonManager_SetParameter_m14070BBC4D31F310B58716438BCF29C19B5A6E4D (void);
+// 0x00000032 System.Void StationButtonManager::DisplayParameter()
+extern void StationButtonManager_DisplayParameter_m020C03DEA2B60FA3DD008790CFFB3B1F02F70BE6 (void);
+// 0x00000033 System.Void StationButtonManager::.ctor()
+extern void StationButtonManager__ctor_m46FE6332C6D08332E88A934CB23A779E068272DF (void);
+// 0x00000034 System.Void TIGWelderMenu::Start()
+extern void TIGWelderMenu_Start_mE5803AD5462F4617BD64D7C69FEA23216E4E25B0 (void);
+// 0x00000035 System.Void TIGWelderMenu::Update()
+extern void TIGWelderMenu_Update_mD2E64979F2836FC9769E40E148F1B078548C48BF (void);
+// 0x00000036 System.Void TIGWelderMenu::Visibility()
+extern void TIGWelderMenu_Visibility_mCC1E3C8AEF4E325B0760D94810319F662F949383 (void);
+// 0x00000037 System.Void TIGWelderMenu::.ctor()
+extern void TIGWelderMenu__ctor_mBD710324D440688A5F895AACB23904E922B24B50 (void);
+static Il2CppMethodPointer s_methodPointers[55] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -149,8 +157,9 @@ static Il2CppMethodPointer s_methodPointers[51] =
 	EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD594047C,
 	Parameters_get_Instance_m27AA99EA19188A5988239B8303597D3003113F40,
 	Parameters_Update_m5CC638D5350217B86CD69BE29DB5BA6CD3C54C46,
-	Parameters_CreateParameter_m89819338CD8107A7A6879BF945042D5113B4C1A2,
+	Parameters_CreateParameter_mD14E59985EDE8673085B809CDC045D96761B6A26,
 	Parameters_ParameterList_mEBBA7A2266D11A084784A037AF95D2490DA68F86,
+	Parameters_SetParameters_m25A56C907A028D9B3A21FA5EDD04247DB92D8EAC,
 	Parameters__ctor_m5ED02B3440BF76F017E2037F7B6BB06524AA0EE0,
 	PlaceEquipment_Start_mF5A783D71E27541400A0E00527CE20D4B31B5532,
 	PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF,
@@ -161,14 +170,17 @@ static Il2CppMethodPointer s_methodPointers[51] =
 	PlaceEquipment_useEquipment_m92511E83865B63ECE500BF11EAC607AE094BA387,
 	PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5,
 	PlaceEquipment__cctor_mE3743B815FC8468DA10FC898DC03C8A4BD46A777,
-	StationEquipmentManager_set_Icon_m90FE3730F8ECB8FAA32A3CE9CC56C50F11609454,
-	StationEquipmentManager_Start_m5B851CD4BF61709A1D1DB5CFED0DBD0C8A5B8B1E,
-	StationEquipmentManager__ctor_m43802FAADA1A34E69A866A1148D9940BB531D6D7,
-	UseEquipment_Start_m577B61B1D60050EBAF2FB7C5A80FA39567F0F7B6,
-	UseEquipment_Update_mA8CF808CA2EC8A64A276225F326091EBF68429D4,
-	UseEquipment__ctor_mB4385C350F18539113A688F37833B95625648B20,
+	StationButtonManager_Start_m74F2B6E4B2597D08D5EE95AD37B5BAFB32260D79,
+	StationButtonManager_Update_mCBEAF6EFC90E67B8A5DD3A8C70B0A41758CE6461,
+	StationButtonManager_SetParameter_m14070BBC4D31F310B58716438BCF29C19B5A6E4D,
+	StationButtonManager_DisplayParameter_m020C03DEA2B60FA3DD008790CFFB3B1F02F70BE6,
+	StationButtonManager__ctor_m46FE6332C6D08332E88A934CB23A779E068272DF,
+	TIGWelderMenu_Start_mE5803AD5462F4617BD64D7C69FEA23216E4E25B0,
+	TIGWelderMenu_Update_mD2E64979F2836FC9769E40E148F1B078548C48BF,
+	TIGWelderMenu_Visibility_mCC1E3C8AEF4E325B0760D94810319F662F949383,
+	TIGWelderMenu__ctor_mBD710324D440688A5F895AACB23904E922B24B50,
 };
-static const int32_t s_InvokerIndices[51] = 
+static const int32_t s_InvokerIndices[55] = 
 {
 	6314,
 	5036,
@@ -203,8 +215,9 @@ static const int32_t s_InvokerIndices[51] =
 	6429,
 	11654,
 	6429,
-	6429,
 	5036,
+	5036,
+	6429,
 	6429,
 	6429,
 	6429,
@@ -215,7 +228,10 @@ static const int32_t s_InvokerIndices[51] =
 	6429,
 	6429,
 	11697,
+	6429,
+	6429,
 	5036,
+	6429,
 	6429,
 	6429,
 	6429,
@@ -226,7 +242,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	51,
+	55,
 	s_methodPointers,
 	0,
 	NULL,

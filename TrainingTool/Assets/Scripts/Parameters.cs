@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class Parameters : MonoBehaviour
 {
     [SerializeField]private GameObject paramter_input;
-    [SerializeField] private Text debugText;
+    
     private List<Equipment> equipments;
+
+    StationButtonManager _stationButtonManager;
+
     private static Parameters instance;
     public static Parameters Instance
     {
@@ -20,23 +23,43 @@ public class Parameters : MonoBehaviour
         
     }
 
-    private void Update()
+     void Update()
     {
-        if (equipments != null)
-            CreateParameter();
+        
+         
     }
 
-    public void CreateParameter()
+    public void CreateParameter(Equipment i)
     {
-        foreach(Equipment i in equipments)
-        {
-            Instantiate(i.Setting, paramter_input.transform);
-        }
+        
+        StationButtonManager a = Instantiate(i.Setting, paramter_input.transform);
+        a.SetParameter(i.Parameters);
+
     }
 
     public void ParameterList(Equipment equipment)
     {
-        debugText.text = equipment.EquipmentSettingState;
-        equipments.Add(equipment);
+        if (equipments != null)
+        {
+            equipments.Add(equipment);
+            CreateParameter(equipment);
+            return;
+        }
+        if(equipments == null)
+        {
+            equipments = new List<Equipment>();
+            equipments.Add(equipment as Equipment);
+            CreateParameter(equipment);
+            return;
+        }
+        
+        /*
+        foreach (Equipment i in equipments)
+            debugText.text = i.EquipmentSettingState;*/
+    }
+
+    public void SetParameters()
+    {
+
     }
 }
