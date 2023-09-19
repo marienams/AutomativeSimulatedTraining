@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba7050f561234b2ea88a03b2f7ec737, type: 3}
+  m_Name: Electrode_6013
+  m_EditorClassIdentifier: 
+  equipmentPrefab: {fileID: 2358905903904143164, guid: 84aea4e0b040a4b93b781c505012575b,
+    type: 3}
+  Setting: {fileID: 1286331168505747601, guid: 9267edd133f62460591991160fcaa2c6, type: 3}
+  equipment_icon: {fileID: 21300000, guid: 0f0347a214dd44dd4a56d53c04f97f5b, type: 3}
+  EquipmentSettingState: Electric
+  Parameters: {fileID: 0}
