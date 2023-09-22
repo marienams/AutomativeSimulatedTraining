@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Parameters : MonoBehaviour
 {
-    [SerializeField] private Text debugText;
+    //[SerializeField] private Text debugText;
     [SerializeField] private ParameterMenu parameter_menu;
     [SerializeField]private GameObject stationContainer;
     [SerializeField] private StationButtonManager _stationButtonPrefab;
+    [SerializeField] private TextMeshProUGUI stationName;
     
     private List<Equipment> equipments;
 
@@ -25,8 +27,12 @@ public class Parameters : MonoBehaviour
         }
         
     }
+    private void Start()
+    {
+        stationName.text = StationManager.Instance.GetStation();
+    }
 
-     void Update()
+    void Update()
     {
         
          

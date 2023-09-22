@@ -401,6 +401,8 @@
 "Assets/Scripts/Parameters.cs"
 "Assets/Scripts/PlaceEquipment.cs"
 "Assets/Scripts/StationButtonManager.cs"
+"Assets/Scripts/StationManager.cs"
+"Assets/Scripts/StationOptionSelect.cs"
 -langversion:9.0
 
 /deterministic
