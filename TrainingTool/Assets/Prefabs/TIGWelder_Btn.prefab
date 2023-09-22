@@ -137,6 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugText: {fileID: 7331455390438285239, guid: 5e71332ddf1e94f8f819ce1829330fa4,
     type: 3}
+  parameterMenu: {fileID: 3812204260234861712, guid: 6628b7e0cebb3402d8acc613c147c8dc,
+    type: 3}
 --- !u!1 &226981051714268054
 GameObject:
   m_ObjectHideFlags: 0

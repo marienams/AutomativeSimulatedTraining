@@ -1510,6 +1510,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 5.1.0
     - 6.0.0-pre.3
     compatible:
     - 4.2.3
@@ -1537,6 +1538,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 5.1.0
     verified: 4.2.8
   dependencies:
   - name: com.unity.editorcoroutines
@@ -4669,6 +4671,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 5.1.0
     - 6.0.0-pre.3
     compatible:
     - 4.2.3
@@ -4696,6 +4699,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 5.1.0
     verified: 4.2.8
   dependencies:
   - name: com.unity.xr.arsubsystems
@@ -4890,6 +4894,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 5.1.0
     - 6.0.0-pre.3
     compatible:
     - 4.2.3
@@ -4917,6 +4922,7 @@ m_ResolvedPackages:
     - 5.1.0-pre.8
     - 5.1.0-pre.9
     - 5.1.0-pre.10
+    - 5.1.0
     verified: 4.2.8
   dependencies:
   - name: com.unity.xr.arsubsystems

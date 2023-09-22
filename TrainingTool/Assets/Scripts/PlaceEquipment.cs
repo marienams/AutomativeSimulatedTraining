@@ -2,145 +2,94 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit.AR;
 using UnityEngine.XR.ARSubsystems;
 
-[RequireComponent(typeof(ARRaycastManager))]
-public class PlaceEquipment : MonoBehaviour
+public class PlaceEquipment : ARBaseGestureInteractable
 {
+
+    [SerializeField]private Camera arCamera;
+    [SerializeField]private ARRaycastManager arraycastManager;
+    [SerializeField]private ARPlaneManager aRPlaneManager;
+
+    List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
     private Touch touch;
+    private Pose pose;
+
     bool isAddingEquipment;
-    private Vector2 touchPosition;
-    [SerializeField] private Camera arCamera;
-    //[SerializeField] private Canvas mainCanvas;
-    [SerializeField] private Text debugText;
-     private ARRaycastManager arRaycastManager;
-     private ARPlaneManager arPlaneManager;
     [SerializeField] private Button addEquipmentBtn;
+    [SerializeField] private Text debugText;
 
-    public GameObject StationEquipmentContainer;
-
-    public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
-
-    void Start()
+    private void Start()
     {
-        arRaycastManager = GetComponent<ARRaycastManager>();
-        arPlaneManager = GetComponent<ARPlaneManager>();
-        
-        arPlaneManager.enabled = false;
-        isAddingEquipment = false;
+        addEquipmentBtn = GetComponent<Button>();
+        isAddingEquipment = true;
+    }
+
+    private void Update()
+    {
+        addEquipmentBtn.onClick.AddListener(AddDetection);
         debugText.text = isAddingEquipment.ToString();
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        touch = Input.GetTouch(0);
-        
         
 
-        if (addEquipmentBtn != null)
-        {
-            addEquipmentBtn.onClick.AddListener(AddDetection);
-        }
-
-        if (!isAddingEquipment)
-            useEquipment();
-
-        if (touch.tapCount < 0 || touch.phase != TouchPhase.Began)
-            return;
-
-        if (TouchIsOverUI(touch))
-            return;
-
-        if (isAddingEquipment)
-            PlaceObject();
-
     }
-
-    bool GetUserTap(out Vector2 touchPosition)
+    
+    protected override bool CanStartManipulationForGesture(TapGesture gesture)
     {
-        if (Input.touchCount > 0)
+        if (gesture.targetObject == null)
         {
-            Touch touch = Input.GetTouch(0);
-            touchPosition = touch.position;
             return true;
         }
-
-        touchPosition = default;
         return false;
     }
 
-    public void PlaceObject()
+    protected override void OnEndManipulation(TapGesture gesture)
     {
-        if (!GetUserTap(out Vector2 touchPosition))
+        if (gesture.isCanceled)
+        {
             return;
-        if (arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon) && isAddingEquipment)
-        {
-            isAddingEquipment = false;
-            var hitPose = hits[0].pose;
-            Instantiate(DataManager.Instance.GetEquipment(), hitPose.position, hitPose.rotation);
-            
-            arPlaneManager.enabled = false;
-            foreach (ARPlane plane in arPlaneManager.trackables)
-            {
-                plane.gameObject.SetActive(false);
-            }
-            debugText.text = isAddingEquipment.ToString();
-            Parameters.Instance.ParameterList(DataManager.Instance.equipmentObj);
-            //DisplayEquipmentSetting();
         }
+        if (gesture.targetObject != null || IsPointerOverUI(gesture))
+        {
+            return;
+        }
+        if (GestureTransformationUtility.Raycast(gesture.startPosition, hits, TrackableType.PlaneWithinPolygon))
+        {
+            var hitPose = hits[0].pose;
+            GameObject placeObj = Instantiate(DataManager.Instance.GetEquipment(), hitPose.position, hitPose.rotation);
+            isAddingEquipment = false;
+            debugText.text = isAddingEquipment.ToString();
+            var anchorObj = new GameObject("PlacementAnchor");
+            anchorObj.transform.position = pose.position;
+            anchorObj.transform.rotation = pose.rotation;
+            placeObj.transform.parent = anchorObj.transform;
+            Parameters.Instance.ParameterList(DataManager.Instance.equipmentObj);
 
-
+        }
     }
 
-    public void AddDetection()
+    bool IsPointerOverUI(TapGesture touch) // specify the gesture, if it is a tap or a swipe
     {
         
-        isAddingEquipment = true;
-        arPlaneManager.enabled = true;
-        foreach (ARPlane plane in arPlaneManager.trackables)
-        {
-            plane.gameObject.SetActive(true);
-        }
-        debugText.text = isAddingEquipment.ToString();
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
         
-    }
+        eventData.position = new Vector2(touch.startPosition.x, touch.startPosition.y);
+        
+        List<RaycastResult> raycastResult = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, raycastResult);
+        return raycastResult.Count > 0;
 
+    }
 
     
 
-    bool TouchIsOverUI(Touch touch)
+    public void AddDetection()
     {
-        PointerEventData eventData = new PointerEventData(EventSystem.current);
-        eventData.position = new Vector2(touch.position.x, touch.position.y);
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventData, results);
-        return results.Count > 0;
-    }
 
-    void useEquipment()
-    {
-        if (Input.touchCount > 0 && !isAddingEquipment)
-        {
-            Touch touch = Input.GetTouch(0);
-            touchPosition = touch.position;
+        isAddingEquipment = true;
 
-            if (touch.phase == TouchPhase.Began)
-            {
-                Ray ray = arCamera.ScreenPointToRay(touchPosition);
-                RaycastHit hitObject;
-                if (Physics.Raycast(ray, out hitObject))
-                {
-                    Equipment equipment = hitObject.transform.GetComponent<Equipment>();
-                    if (equipment != null)
-                    {
-                        debugText.text = "Equipment";
-                    }
-                }
-            }
-        }
     }
 }
