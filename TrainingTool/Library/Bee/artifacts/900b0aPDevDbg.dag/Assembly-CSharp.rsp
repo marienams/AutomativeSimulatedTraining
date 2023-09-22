@@ -339,7 +339,6 @@
 "Assets/Scripts/Parameters.cs"
 "Assets/Scripts/PlaceEquipment.cs"
 "Assets/Scripts/StationButtonManager.cs"
-"Assets/Scripts/TIGWelderMenu.cs"
 -langversion:9.0
 
 /deterministic

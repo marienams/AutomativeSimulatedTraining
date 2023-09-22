@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentPrefab: {fileID: 8092666921351705488, guid: f40cd6194e50a43868c64a5643dcaef8,
     type: 3}
-  Setting: {fileID: 1286331168505747601, guid: 588c83c44118444da92aba0b36c00263, type: 3}
   equipment_icon: {fileID: 21300000, guid: 53e9fd086efb64184985d13ebd0517aa, type: 3}
-  EquipmentSettingState: Electric
+  Name: Electrode 6010/11
   Parameters: {fileID: 0}
+  equipmentID: 503

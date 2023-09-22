@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SecurityJacket
   m_EditorClassIdentifier: 
   equipmentPrefab: {fileID: 0}
-  Setting: {fileID: 2775957048691022946, guid: b996760bb289c4d57bc625a7937fe168, type: 3}
   equipment_icon: {fileID: 21300000, guid: 571bbd20f44ae41c7a11b738f0d53eef, type: 3}
-  EquipmentSettingState: Security
+  Name: Jacket
   Parameters: {fileID: 0}
+  equipmentID: 1001

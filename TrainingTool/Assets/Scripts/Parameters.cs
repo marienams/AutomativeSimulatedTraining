@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class Parameters : MonoBehaviour
 {
-    [SerializeField]private GameObject paramter_input;
+    [SerializeField] private Text debugText;
+    [SerializeField] private ParameterMenu parameter_menu;
+    [SerializeField]private GameObject stationContainer;
+    [SerializeField] private StationButtonManager _stationButtonPrefab;
     
     private List<Equipment> equipments;
 
@@ -32,8 +35,9 @@ public class Parameters : MonoBehaviour
     public void CreateParameter(Equipment i)
     {
         
-        StationButtonManager a = Instantiate(i.Setting, paramter_input.transform);
-        a.SetParameter(i.Parameters);
+        StationButtonManager a = Instantiate(_stationButtonPrefab, stationContainer.transform);
+        a.Equipment_ID = i.equipmentID;
+        a.Equipment_Name = i.Name;
 
     }
 
@@ -58,8 +62,14 @@ public class Parameters : MonoBehaviour
             debugText.text = i.EquipmentSettingState;*/
     }
 
-    public void SetParameters()
+    public void SetParameters(string name)
     {
-
+        foreach(var equipment in equipments)
+        {
+            if(equipment.Name == name)
+            {
+                Instantiate(parameter_menu);
+            }
+        }
     }
 }

@@ -8,7 +8,6 @@
 		<type fullname="Parameters" preserve="nothing"/>
 		<type fullname="PlaceEquipment" preserve="nothing"/>
 		<type fullname="StationButtonManager" preserve="nothing"/>
-		<type fullname="TIGWelderMenu" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>

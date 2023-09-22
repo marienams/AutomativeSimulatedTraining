@@ -9,8 +9,9 @@ public class Equipment : ScriptableObject
     // Tags: Stationary, Security, Electric
     //[SerializeField] public Button optionsBtn;
     public GameObject equipmentPrefab;
-    public StationButtonManager Setting;
+    
     public Sprite equipment_icon;
-    public string EquipmentSettingState;
+    public string Name;
     public GameObject Parameters;
+    public int equipmentID;
 }

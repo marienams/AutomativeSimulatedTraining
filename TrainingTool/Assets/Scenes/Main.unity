@@ -1036,8 +1036,6 @@ MonoBehaviour:
   _equimentButtonContainer: {fileID: 1163909821}
   equipments: []
   debugText: {fileID: 0}
-  settingCanvas: {fileID: 0}
-  setting_Btn: {fileID: 0}
   StationEquipmentContainer: {fileID: 537411658}
 --- !u!4 &515173489
 Transform:
@@ -1596,7 +1594,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9213c4f78c70f42b4825ec24c9d4df44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paramter_input: {fileID: 85151146}
+  debugText: {fileID: 3188002737643638821}
+  parameter_menu: {fileID: 3812204260234861712, guid: 6628b7e0cebb3402d8acc613c147c8dc,
+    type: 3}
+  stationContainer: {fileID: 85151146}
+  _stationButtonPrefab: {fileID: 4601059986329505841, guid: 52b94192832b9406f81a58dd90a65480,
+    type: 3}
 --- !u!4 &802856507
 Transform:
   m_ObjectHideFlags: 0
@@ -2445,7 +2448,7 @@ PrefabInstance:
     - target: {fileID: 7331455390438285239, guid: 5e71332ddf1e94f8f819ce1829330fa4,
         type: 3}
       propertyPath: m_Text
-      value: 
+      value: Station Button Status
       objectReference: {fileID: 0}
     - target: {fileID: 7337804058093211076, guid: 5e71332ddf1e94f8f819ce1829330fa4,
         type: 3}
@@ -2485,12 +2488,12 @@ PrefabInstance:
     - target: {fileID: 7337804058093211076, guid: 5e71332ddf1e94f8f819ce1829330fa4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 287.641
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7337804058093211076, guid: 5e71332ddf1e94f8f819ce1829330fa4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.244
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7337804058093211076, guid: 5e71332ddf1e94f8f819ce1829330fa4,
         type: 3}
@@ -2560,6 +2563,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3188002737643638819}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3188002737643638821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7331455390438285239, guid: 5e71332ddf1e94f8f819ce1829330fa4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3188002737643638819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5434462552450501220
 MonoBehaviour:
   m_ObjectHideFlags: 0

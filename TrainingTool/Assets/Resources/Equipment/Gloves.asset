@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gloves
   m_EditorClassIdentifier: 
   equipmentPrefab: {fileID: 0}
-  Setting: {fileID: 1286331168505747601, guid: c09d09edb6ff04254b11e0b2433b5bd7, type: 3}
   equipment_icon: {fileID: 21300000, guid: 07550095a1deb459797d23361f432214, type: 3}
-  EquipmentSettingState: Security
+  Name: Gloves
   Parameters: {fileID: 0}
+  equipmentID: 701

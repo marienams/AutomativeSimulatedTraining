@@ -6,17 +6,40 @@ using UnityEngine.UI;
 public class StationButtonManager : MonoBehaviour
 {
     
-    [SerializeField] private Text debugText;
-
+    
+    [SerializeField] private Text buttonText;
     private Button equipmentBtn;
-    [SerializeField] private GameObject parameterMenu;
+    
+
     // Start is called before the first frame update
+
+    private int equipment_id;
+    public int Equipment_ID
+    {
+        set
+        {
+            equipment_id = value;
+
+        }
+    }
+
+    private string equipment_name;
+    public string Equipment_Name
+    {
+        set
+        {
+            equipment_name = value;
+            buttonText.text = equipment_name;
+        }
+    }
+
     void Start()
     {
-        debugText.text = "Button added";
+        
         equipmentBtn = GetComponent<Button>();
 
         equipmentBtn.onClick.AddListener(DisplayParameter);
+
     }
 
     // Update is called once per frame
@@ -25,13 +48,10 @@ public class StationButtonManager : MonoBehaviour
         
     }
 
-    public void SetParameter(GameObject equip)
-    {
-        parameterMenu = equip;
-        
-    }
+    
     void DisplayParameter()
     {
-        parameterMenu.SetActive(true);
+        Parameters.Instance.SetParameters(equipment_name);
+        
     }
 }

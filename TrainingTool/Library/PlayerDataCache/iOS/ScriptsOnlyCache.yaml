@@ -9,7 +9,6 @@ ScriptsOnlyBuild:
     - Parameters
     - PlaceEquipment
     - StationButtonManager
-    - TIGWelderMenu
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -330,8 +329,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7706}
     - Class: 114
       Script: {instanceID: 8256}
-    - Class: 114
-      Script: {instanceID: 8266}
     - Class: 114
       Script: {instanceID: 8300}
     - Class: 114
@@ -853,7 +850,7 @@ ScriptsOnlyBuild:
     className: AROcclusionManager
   - hash:
       serializedVersion: 2
-      Hash: 2b9e8337a2bd9dc02da7fe692aca11c6
+      Hash: ace91c11be09b79520292544605eb437
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataManager
@@ -1633,12 +1630,6 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TIGWelderMenu
-  - hash:
-      serializedVersion: 2
       Hash: ea41fa959037983f32ebd7c70de46554
     assemblyName: Unity.XR.OpenXR.Features.ConformanceAutomation.dll
     namespaceName: UnityEngine.XR.OpenXR.Features.ConformanceAutomation
@@ -1735,7 +1726,7 @@ ScriptsOnlyBuild:
     className: Vector3AffordanceReceiver
   - hash:
       serializedVersion: 2
-      Hash: 4ae74bf088310786d3c454b6ca3f86b3
+      Hash: 669cc5151eff3d50430e7d6b0beee3f1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StationButtonManager
@@ -2011,7 +2002,7 @@ ScriptsOnlyBuild:
     className: BlendShapeAffordanceReceiver
   - hash:
       serializedVersion: 2
-      Hash: 0cec92fbc081efa7f3345fb4b3baf577
+      Hash: 9431a0213e6fe2896c6f7f413808e011
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Equipment
@@ -2125,7 +2116,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 660cbf25dda7937bd404db1386b492d3
+      Hash: 7ebbcb05eb8564298e6e7581497a6338
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Parameters

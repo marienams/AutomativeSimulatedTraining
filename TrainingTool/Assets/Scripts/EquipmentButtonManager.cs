@@ -12,11 +12,13 @@ public class EquipmentButtonManager : MonoBehaviour
 
     private Button equipmentBtn;
 
+
     
 
-    private int equipment_id;
+
     private Sprite equipment_icon;
 
+    private int equipment_id;
     public int Equipment_ID
     {
         set

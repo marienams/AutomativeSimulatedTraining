@@ -397,10 +397,10 @@
 "Assets/Scripts/DataManager.cs"
 "Assets/Scripts/Equipment.cs"
 "Assets/Scripts/EquipmentButtonManager.cs"
+"Assets/Scripts/ParameterMenu.cs"
 "Assets/Scripts/Parameters.cs"
 "Assets/Scripts/PlaceEquipment.cs"
 "Assets/Scripts/StationButtonManager.cs"
-"Assets/Scripts/TIGWelderMenu.cs"
 -langversion:9.0
 
 /deterministic

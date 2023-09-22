@@ -60,69 +60,61 @@ extern void DataManager_CreateButtons_m3C0ED99A83D50894077A000055A284B138325060 
 extern void DataManager_SetEquipment_m2597B22148A03E40E4569645E5938FB5D66AE5DD (void);
 // 0x00000018 UnityEngine.GameObject DataManager::GetEquipment()
 extern void DataManager_GetEquipment_m5484A0410489E12AFC239C92F24E2301411DAF47 (void);
-// 0x00000019 UnityEngine.GameObject DataManager::SettingsParameters()
-extern void DataManager_SettingsParameters_mB13970F1116090CF5B2D94FC73F2062DB633D8E8 (void);
-// 0x0000001A System.Void DataManager::.ctor()
+// 0x00000019 System.Void DataManager::.ctor()
 extern void DataManager__ctor_mD735B7F80F3DE13E2BB45118CDA7FA619330DCDA (void);
-// 0x0000001B System.Void Equipment::.ctor()
+// 0x0000001A System.Void Equipment::.ctor()
 extern void Equipment__ctor_m9A6A6BAFB5BD8CDC32F39E379591E42081AC2F67 (void);
-// 0x0000001C System.Void EquipmentButtonManager::set_Equipment_ID(System.Int32)
+// 0x0000001B System.Void EquipmentButtonManager::set_Equipment_ID(System.Int32)
 extern void EquipmentButtonManager_set_Equipment_ID_m8B70195D7844834749D3BF0EDDA5EF16C2BB7B9E (void);
-// 0x0000001D System.Void EquipmentButtonManager::set_Equipment_Icon(UnityEngine.Sprite)
+// 0x0000001C System.Void EquipmentButtonManager::set_Equipment_Icon(UnityEngine.Sprite)
 extern void EquipmentButtonManager_set_Equipment_Icon_m53E941703DDC0E5E1F43958B9E4DEECC1660A436 (void);
-// 0x0000001E System.Void EquipmentButtonManager::Start()
+// 0x0000001D System.Void EquipmentButtonManager::Start()
 extern void EquipmentButtonManager_Start_m783F365E6973D4E0F83A4315713A206466A4A961 (void);
-// 0x0000001F System.Void EquipmentButtonManager::Update()
+// 0x0000001E System.Void EquipmentButtonManager::Update()
 extern void EquipmentButtonManager_Update_m0562CE65428F88852C5422FB1C84D397F54DD101 (void);
-// 0x00000020 System.Void EquipmentButtonManager::SelectEquipment()
+// 0x0000001F System.Void EquipmentButtonManager::SelectEquipment()
 extern void EquipmentButtonManager_SelectEquipment_mBEA92B882926AF47FF6D4841CEAF52EA4DCBB6BA (void);
-// 0x00000021 System.Void EquipmentButtonManager::.ctor()
+// 0x00000020 System.Void EquipmentButtonManager::.ctor()
 extern void EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD594047C (void);
-// 0x00000022 Parameters Parameters::get_Instance()
+// 0x00000021 Parameters Parameters::get_Instance()
 extern void Parameters_get_Instance_m27AA99EA19188A5988239B8303597D3003113F40 (void);
-// 0x00000023 System.Void Parameters::Update()
+// 0x00000022 System.Void Parameters::Update()
 extern void Parameters_Update_m5CC638D5350217B86CD69BE29DB5BA6CD3C54C46 (void);
-// 0x00000024 System.Void Parameters::CreateParameter(Equipment)
+// 0x00000023 System.Void Parameters::CreateParameter(Equipment)
 extern void Parameters_CreateParameter_mD14E59985EDE8673085B809CDC045D96761B6A26 (void);
-// 0x00000025 System.Void Parameters::ParameterList(Equipment)
+// 0x00000024 System.Void Parameters::ParameterList(Equipment)
 extern void Parameters_ParameterList_mEBBA7A2266D11A084784A037AF95D2490DA68F86 (void);
-// 0x00000026 System.Void Parameters::SetParameters()
-extern void Parameters_SetParameters_m25A56C907A028D9B3A21FA5EDD04247DB92D8EAC (void);
-// 0x00000027 System.Void Parameters::.ctor()
+// 0x00000025 System.Void Parameters::SetParameters(System.String)
+extern void Parameters_SetParameters_mB7DCC09F00C59DB07F26B89029942D8B6326ED01 (void);
+// 0x00000026 System.Void Parameters::.ctor()
 extern void Parameters__ctor_m5ED02B3440BF76F017E2037F7B6BB06524AA0EE0 (void);
-// 0x00000028 System.Void PlaceEquipment::Start()
+// 0x00000027 System.Void PlaceEquipment::Start()
 extern void PlaceEquipment_Start_mF5A783D71E27541400A0E00527CE20D4B31B5532 (void);
-// 0x00000029 System.Void PlaceEquipment::Update()
+// 0x00000028 System.Void PlaceEquipment::Update()
 extern void PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF (void);
-// 0x0000002A System.Boolean PlaceEquipment::CanStartManipulationForGesture(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
+// 0x00000029 System.Boolean PlaceEquipment::CanStartManipulationForGesture(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
 extern void PlaceEquipment_CanStartManipulationForGesture_m34A21DDC7FD405B5290144F5CC971CB667A72D81 (void);
-// 0x0000002B System.Void PlaceEquipment::OnEndManipulation(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
+// 0x0000002A System.Void PlaceEquipment::OnEndManipulation(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
 extern void PlaceEquipment_OnEndManipulation_mBD613B70A3DBBE7D2C914B507A6C9D7447D67B5C (void);
-// 0x0000002C System.Boolean PlaceEquipment::IsPointerOverUI(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
+// 0x0000002B System.Boolean PlaceEquipment::IsPointerOverUI(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
 extern void PlaceEquipment_IsPointerOverUI_m3D99DDF7DC8749E1F6F5B2A6BF57EE39B96C7C65 (void);
-// 0x0000002D System.Void PlaceEquipment::AddDetection()
+// 0x0000002C System.Void PlaceEquipment::AddDetection()
 extern void PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C (void);
-// 0x0000002E System.Void PlaceEquipment::.ctor()
+// 0x0000002D System.Void PlaceEquipment::.ctor()
 extern void PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5 (void);
-// 0x0000002F System.Void StationButtonManager::Start()
+// 0x0000002E System.Void StationButtonManager::set_Equipment_ID(System.Int32)
+extern void StationButtonManager_set_Equipment_ID_mBD6AB58D83AB740905BCA019C627AD536B23FCDB (void);
+// 0x0000002F System.Void StationButtonManager::set_Equipment_Name(System.String)
+extern void StationButtonManager_set_Equipment_Name_m05B8C4AB5E385FB753490AB59C3F9437A794B8E9 (void);
+// 0x00000030 System.Void StationButtonManager::Start()
 extern void StationButtonManager_Start_m74F2B6E4B2597D08D5EE95AD37B5BAFB32260D79 (void);
-// 0x00000030 System.Void StationButtonManager::Update()
+// 0x00000031 System.Void StationButtonManager::Update()
 extern void StationButtonManager_Update_mCBEAF6EFC90E67B8A5DD3A8C70B0A41758CE6461 (void);
-// 0x00000031 System.Void StationButtonManager::SetParameter(UnityEngine.GameObject)
-extern void StationButtonManager_SetParameter_m14070BBC4D31F310B58716438BCF29C19B5A6E4D (void);
 // 0x00000032 System.Void StationButtonManager::DisplayParameter()
 extern void StationButtonManager_DisplayParameter_m020C03DEA2B60FA3DD008790CFFB3B1F02F70BE6 (void);
 // 0x00000033 System.Void StationButtonManager::.ctor()
 extern void StationButtonManager__ctor_m46FE6332C6D08332E88A934CB23A779E068272DF (void);
-// 0x00000034 System.Void TIGWelderMenu::Start()
-extern void TIGWelderMenu_Start_mE5803AD5462F4617BD64D7C69FEA23216E4E25B0 (void);
-// 0x00000035 System.Void TIGWelderMenu::Update()
-extern void TIGWelderMenu_Update_mD2E64979F2836FC9769E40E148F1B078548C48BF (void);
-// 0x00000036 System.Void TIGWelderMenu::Visibility()
-extern void TIGWelderMenu_Visibility_mCC1E3C8AEF4E325B0760D94810319F662F949383 (void);
-// 0x00000037 System.Void TIGWelderMenu::.ctor()
-extern void TIGWelderMenu__ctor_mBD710324D440688A5F895AACB23904E922B24B50 (void);
-static Il2CppMethodPointer s_methodPointers[55] = 
+static Il2CppMethodPointer s_methodPointers[51] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -148,7 +140,6 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	DataManager_CreateButtons_m3C0ED99A83D50894077A000055A284B138325060,
 	DataManager_SetEquipment_m2597B22148A03E40E4569645E5938FB5D66AE5DD,
 	DataManager_GetEquipment_m5484A0410489E12AFC239C92F24E2301411DAF47,
-	DataManager_SettingsParameters_mB13970F1116090CF5B2D94FC73F2062DB633D8E8,
 	DataManager__ctor_mD735B7F80F3DE13E2BB45118CDA7FA619330DCDA,
 	Equipment__ctor_m9A6A6BAFB5BD8CDC32F39E379591E42081AC2F67,
 	EquipmentButtonManager_set_Equipment_ID_m8B70195D7844834749D3BF0EDDA5EF16C2BB7B9E,
@@ -161,7 +152,7 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	Parameters_Update_m5CC638D5350217B86CD69BE29DB5BA6CD3C54C46,
 	Parameters_CreateParameter_mD14E59985EDE8673085B809CDC045D96761B6A26,
 	Parameters_ParameterList_mEBBA7A2266D11A084784A037AF95D2490DA68F86,
-	Parameters_SetParameters_m25A56C907A028D9B3A21FA5EDD04247DB92D8EAC,
+	Parameters_SetParameters_mB7DCC09F00C59DB07F26B89029942D8B6326ED01,
 	Parameters__ctor_m5ED02B3440BF76F017E2037F7B6BB06524AA0EE0,
 	PlaceEquipment_Start_mF5A783D71E27541400A0E00527CE20D4B31B5532,
 	PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF,
@@ -170,17 +161,14 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	PlaceEquipment_IsPointerOverUI_m3D99DDF7DC8749E1F6F5B2A6BF57EE39B96C7C65,
 	PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C,
 	PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5,
+	StationButtonManager_set_Equipment_ID_mBD6AB58D83AB740905BCA019C627AD536B23FCDB,
+	StationButtonManager_set_Equipment_Name_m05B8C4AB5E385FB753490AB59C3F9437A794B8E9,
 	StationButtonManager_Start_m74F2B6E4B2597D08D5EE95AD37B5BAFB32260D79,
 	StationButtonManager_Update_mCBEAF6EFC90E67B8A5DD3A8C70B0A41758CE6461,
-	StationButtonManager_SetParameter_m14070BBC4D31F310B58716438BCF29C19B5A6E4D,
 	StationButtonManager_DisplayParameter_m020C03DEA2B60FA3DD008790CFFB3B1F02F70BE6,
 	StationButtonManager__ctor_m46FE6332C6D08332E88A934CB23A779E068272DF,
-	TIGWelderMenu_Start_mE5803AD5462F4617BD64D7C69FEA23216E4E25B0,
-	TIGWelderMenu_Update_mD2E64979F2836FC9769E40E148F1B078548C48BF,
-	TIGWelderMenu_Visibility_mCC1E3C8AEF4E325B0760D94810319F662F949383,
-	TIGWelderMenu__ctor_mBD710324D440688A5F895AACB23904E922B24B50,
 };
-static const int32_t s_InvokerIndices[55] = 
+static const int32_t s_InvokerIndices[51] = 
 {
 	6314,
 	5036,
@@ -206,7 +194,6 @@ static const int32_t s_InvokerIndices[55] =
 	6429,
 	4998,
 	6314,
-	6314,
 	6429,
 	6429,
 	4998,
@@ -219,7 +206,7 @@ static const int32_t s_InvokerIndices[55] =
 	6429,
 	5036,
 	5036,
-	6429,
+	5036,
 	6429,
 	6429,
 	6429,
@@ -228,11 +215,8 @@ static const int32_t s_InvokerIndices[55] =
 	3495,
 	6429,
 	6429,
-	6429,
-	6429,
+	4998,
 	5036,
-	6429,
-	6429,
 	6429,
 	6429,
 	6429,
@@ -242,7 +226,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	55,
+	51,
 	s_methodPointers,
 	0,
 	NULL,

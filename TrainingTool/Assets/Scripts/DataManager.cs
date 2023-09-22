@@ -21,8 +21,8 @@ public class DataManager : MonoBehaviour
     
     private int current_id = 0;
 
-    public GameObject settingCanvas;
-    [SerializeField]private StationButtonManager setting_Btn;
+    
+    
     [SerializeField] private GameObject StationEquipmentContainer;
 
 
@@ -68,7 +68,7 @@ public class DataManager : MonoBehaviour
    public void SetEquipment(int id)
     {
         equipment = equipments[id].equipmentPrefab;
-        setting_Btn = equipments[id].Setting;
+        
         equipmentObj = equipments[id];
     }
     
@@ -80,13 +80,6 @@ public class DataManager : MonoBehaviour
         return equipment;
     }
 
-    public GameObject SettingsParameters()
-    {
-        return settingCanvas;
-    }
-    /*public void CreateParameters()
-    {
-        Parameters.Instance.Input = setting_Btn;
-        Parameters.Instance.CreateParameter(setting_Btn);
-    }*/
+    
+    
 }
