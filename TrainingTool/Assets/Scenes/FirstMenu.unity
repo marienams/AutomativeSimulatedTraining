@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationName: {fileID: 1232386354}
+  stationID: 2
 --- !u!1 &720194684
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationName: {fileID: 2089738573}
+  stationID: 3
 --- !u!1 &1072206956
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationName: {fileID: 1072206958}
+  stationID: 0
 --- !u!1 &1232386352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationName: {fileID: 1072206958}
+  stationID: 1
 --- !u!1 &1287801813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationName: {fileID: 1800610501}
+  stationID: 3
 --- !u!1 &2089738571
 GameObject:
   m_ObjectHideFlags: 0

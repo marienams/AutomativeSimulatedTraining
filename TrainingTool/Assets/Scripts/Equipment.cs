@@ -12,6 +12,6 @@ public class Equipment : ScriptableObject
     
     public Sprite equipment_icon;
     public string Name;
-    public GameObject Parameters;
+    
     public int equipmentID;
 }

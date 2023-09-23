@@ -5,9 +5,12 @@
 		<type fullname="DataManager" preserve="nothing"/>
 		<type fullname="Equipment" preserve="nothing"/>
 		<type fullname="EquipmentButtonManager" preserve="nothing"/>
+		<type fullname="ParameterMenu" preserve="nothing"/>
 		<type fullname="Parameters" preserve="nothing"/>
 		<type fullname="PlaceEquipment" preserve="nothing"/>
 		<type fullname="StationButtonManager" preserve="nothing"/>
+		<type fullname="StationManager" preserve="nothing"/>
+		<type fullname="StationOptionSelect" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>

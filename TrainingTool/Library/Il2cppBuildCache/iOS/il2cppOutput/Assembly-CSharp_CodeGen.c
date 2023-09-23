@@ -76,45 +76,93 @@ extern void EquipmentButtonManager_Update_m0562CE65428F88852C5422FB1C84D397F54DD
 extern void EquipmentButtonManager_SelectEquipment_mBEA92B882926AF47FF6D4841CEAF52EA4DCBB6BA (void);
 // 0x00000020 System.Void EquipmentButtonManager::.ctor()
 extern void EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD594047C (void);
-// 0x00000021 Parameters Parameters::get_Instance()
+// 0x00000021 System.Void ParameterMenu::Start()
+extern void ParameterMenu_Start_mFFC8BF9B95F1BACB49C2A892BF87D0816FDDCC17 (void);
+// 0x00000022 System.Void ParameterMenu::Update()
+extern void ParameterMenu_Update_m0C38608CE611D2056FE7E65A68245A4AD7FD4455 (void);
+// 0x00000023 System.Void ParameterMenu::Finish()
+extern void ParameterMenu_Finish_m45336F8A4D3B193CAC4854FE20307DE713170047 (void);
+// 0x00000024 System.Void ParameterMenu::.ctor()
+extern void ParameterMenu__ctor_m27D16898F506AC71006C534CA57A427891CF6251 (void);
+// 0x00000025 Parameters Parameters::get_Instance()
 extern void Parameters_get_Instance_m27AA99EA19188A5988239B8303597D3003113F40 (void);
-// 0x00000022 System.Void Parameters::Update()
+// 0x00000026 System.Void Parameters::Start()
+extern void Parameters_Start_m2502B6C76C3BD53892C5F1240AC426A6314DB400 (void);
+// 0x00000027 System.Void Parameters::Update()
 extern void Parameters_Update_m5CC638D5350217B86CD69BE29DB5BA6CD3C54C46 (void);
-// 0x00000023 System.Void Parameters::CreateParameter(Equipment)
+// 0x00000028 System.Void Parameters::CreateParameter(Equipment)
 extern void Parameters_CreateParameter_mD14E59985EDE8673085B809CDC045D96761B6A26 (void);
-// 0x00000024 System.Void Parameters::ParameterList(Equipment)
+// 0x00000029 System.Void Parameters::ParameterList(Equipment)
 extern void Parameters_ParameterList_mEBBA7A2266D11A084784A037AF95D2490DA68F86 (void);
-// 0x00000025 System.Void Parameters::SetParameters(System.String)
+// 0x0000002A System.Void Parameters::SetParameters(System.String)
 extern void Parameters_SetParameters_mB7DCC09F00C59DB07F26B89029942D8B6326ED01 (void);
-// 0x00000026 System.Void Parameters::.ctor()
+// 0x0000002B System.Void Parameters::StationSetupCheck()
+extern void Parameters_StationSetupCheck_m40AEAB3AB5E861604E1E6A1B08A00188642DCB96 (void);
+// 0x0000002C System.Void Parameters::.ctor()
 extern void Parameters__ctor_m5ED02B3440BF76F017E2037F7B6BB06524AA0EE0 (void);
-// 0x00000027 System.Void PlaceEquipment::Start()
+// 0x0000002D System.Void PlaceEquipment::Start()
 extern void PlaceEquipment_Start_mF5A783D71E27541400A0E00527CE20D4B31B5532 (void);
-// 0x00000028 System.Void PlaceEquipment::Update()
+// 0x0000002E System.Void PlaceEquipment::Update()
 extern void PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF (void);
-// 0x00000029 System.Boolean PlaceEquipment::CanStartManipulationForGesture(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
+// 0x0000002F System.Boolean PlaceEquipment::CanStartManipulationForGesture(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
 extern void PlaceEquipment_CanStartManipulationForGesture_m34A21DDC7FD405B5290144F5CC971CB667A72D81 (void);
-// 0x0000002A System.Void PlaceEquipment::OnEndManipulation(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
+// 0x00000030 System.Void PlaceEquipment::OnEndManipulation(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
 extern void PlaceEquipment_OnEndManipulation_mBD613B70A3DBBE7D2C914B507A6C9D7447D67B5C (void);
-// 0x0000002B System.Boolean PlaceEquipment::IsPointerOverUI(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
+// 0x00000031 System.Boolean PlaceEquipment::IsPointerOverUI(UnityEngine.XR.Interaction.Toolkit.AR.TapGesture)
 extern void PlaceEquipment_IsPointerOverUI_m3D99DDF7DC8749E1F6F5B2A6BF57EE39B96C7C65 (void);
-// 0x0000002C System.Void PlaceEquipment::AddDetection()
+// 0x00000032 System.Void PlaceEquipment::AddDetection()
 extern void PlaceEquipment_AddDetection_m8ABB32C5EF8531405A97B0C192A2C478A4E1604C (void);
-// 0x0000002D System.Void PlaceEquipment::.ctor()
+// 0x00000033 System.Void PlaceEquipment::.ctor()
 extern void PlaceEquipment__ctor_mF77D4151829B4B352CB67C117AAEF06186FB2CF5 (void);
-// 0x0000002E System.Void StationButtonManager::set_Equipment_ID(System.Int32)
+// 0x00000034 System.Void StationButtonManager::set_Equipment_ID(System.Int32)
 extern void StationButtonManager_set_Equipment_ID_mBD6AB58D83AB740905BCA019C627AD536B23FCDB (void);
-// 0x0000002F System.Void StationButtonManager::set_Equipment_Name(System.String)
+// 0x00000035 System.Void StationButtonManager::set_Equipment_Name(System.String)
 extern void StationButtonManager_set_Equipment_Name_m05B8C4AB5E385FB753490AB59C3F9437A794B8E9 (void);
-// 0x00000030 System.Void StationButtonManager::Start()
+// 0x00000036 System.Void StationButtonManager::Start()
 extern void StationButtonManager_Start_m74F2B6E4B2597D08D5EE95AD37B5BAFB32260D79 (void);
-// 0x00000031 System.Void StationButtonManager::Update()
+// 0x00000037 System.Void StationButtonManager::Update()
 extern void StationButtonManager_Update_mCBEAF6EFC90E67B8A5DD3A8C70B0A41758CE6461 (void);
-// 0x00000032 System.Void StationButtonManager::DisplayParameter()
+// 0x00000038 System.Void StationButtonManager::DisplayParameter()
 extern void StationButtonManager_DisplayParameter_m020C03DEA2B60FA3DD008790CFFB3B1F02F70BE6 (void);
-// 0x00000033 System.Void StationButtonManager::.ctor()
+// 0x00000039 System.Void StationButtonManager::.ctor()
 extern void StationButtonManager__ctor_m46FE6332C6D08332E88A934CB23A779E068272DF (void);
-static Il2CppMethodPointer s_methodPointers[51] = 
+// 0x0000003A System.Void StationManager::Awake()
+extern void StationManager_Awake_m71AEE84C05E988F15C49DC161ECF6A84354F5797 (void);
+// 0x0000003B System.Void StationManager::SetStation(System.String,System.Int32)
+extern void StationManager_SetStation_mA0CE7FD05DD2492F49C42FD51409CBB8BEA80584 (void);
+// 0x0000003C System.String StationManager::GetStationName()
+extern void StationManager_GetStationName_m9124623DB7C2B3AE6A981DEB7EEF5AE3CC3A03EF (void);
+// 0x0000003D System.Boolean StationManager::CheckStation(System.Int32)
+extern void StationManager_CheckStation_m6C0472AA431127C65070ED2D7FB5974871A8F99B (void);
+// 0x0000003E System.Void StationManager::.ctor()
+extern void StationManager__ctor_mF42D8D70B3DF3B5434D4C0523978DF5894C24F8C (void);
+// 0x0000003F System.Void StationOptionSelect::Start()
+extern void StationOptionSelect_Start_m8293B001550A0A1342EB0195EE8D163D207B7D9D (void);
+// 0x00000040 System.Void StationOptionSelect::SetStation()
+extern void StationOptionSelect_SetStation_m55F5ADF36BC39FA0A76BB9B0499BEA825D128039 (void);
+// 0x00000041 System.Void StationOptionSelect::.ctor()
+extern void StationOptionSelect__ctor_m714C16A4254A6258032B1FF7BF79E7D7788C96C2 (void);
+// 0x00000042 System.Int32 Stations::get_StationID()
+extern void Stations_get_StationID_m0105F5347ADAE6CDE8FDC25DC8CF92B6B5FC0700 (void);
+// 0x00000043 System.Void Stations::set_StationID(System.Int32)
+extern void Stations_set_StationID_mFC46D63FD79667D7D649BA18A10DAB740567569F (void);
+// 0x00000044 System.Int32 Stations::get_Security()
+extern void Stations_get_Security_m2B90DC78E62836B8081E6B2824EBC7142212DABA (void);
+// 0x00000045 System.Void Stations::set_Security(System.Int32)
+extern void Stations_set_Security_m25E0A3DBDDAB0A9DB892D7A4E343FCB295D909A5 (void);
+// 0x00000046 System.Int32 Stations::get_Machine()
+extern void Stations_get_Machine_m3311B05ED16C21ED7D96E080CDDF0E883F1FAF66 (void);
+// 0x00000047 System.Void Stations::set_Machine(System.Int32)
+extern void Stations_set_Machine_mB7C7EA415157A5D4F5B2D5AD656CFD8205FA97B9 (void);
+// 0x00000048 System.Int32 Stations::get_Electrode()
+extern void Stations_get_Electrode_m597C019C89C1986D34D5ABA478391FF800F93775 (void);
+// 0x00000049 System.Void Stations::set_Electrode(System.Int32)
+extern void Stations_set_Electrode_m206B7D1EFBCD1C703DE4BCF5D75D4EA7C02C3FEE (void);
+// 0x0000004A System.Void Stations::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+extern void Stations__ctor_mB6B5469EF6B89CCE40E9FF8384AA6E7725CC8FC1 (void);
+// 0x0000004B System.Int32 Stations::MatchElectrode(System.Int32)
+extern void Stations_MatchElectrode_mDA6660FFB57EA2F08469C998F7FF95C216322EC2 (void);
+static Il2CppMethodPointer s_methodPointers[75] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -148,11 +196,17 @@ static Il2CppMethodPointer s_methodPointers[51] =
 	EquipmentButtonManager_Update_m0562CE65428F88852C5422FB1C84D397F54DD101,
 	EquipmentButtonManager_SelectEquipment_mBEA92B882926AF47FF6D4841CEAF52EA4DCBB6BA,
 	EquipmentButtonManager__ctor_m3FEFBF3078E4C5D8AE37DC432F5EA37FD594047C,
+	ParameterMenu_Start_mFFC8BF9B95F1BACB49C2A892BF87D0816FDDCC17,
+	ParameterMenu_Update_m0C38608CE611D2056FE7E65A68245A4AD7FD4455,
+	ParameterMenu_Finish_m45336F8A4D3B193CAC4854FE20307DE713170047,
+	ParameterMenu__ctor_m27D16898F506AC71006C534CA57A427891CF6251,
 	Parameters_get_Instance_m27AA99EA19188A5988239B8303597D3003113F40,
+	Parameters_Start_m2502B6C76C3BD53892C5F1240AC426A6314DB400,
 	Parameters_Update_m5CC638D5350217B86CD69BE29DB5BA6CD3C54C46,
 	Parameters_CreateParameter_mD14E59985EDE8673085B809CDC045D96761B6A26,
 	Parameters_ParameterList_mEBBA7A2266D11A084784A037AF95D2490DA68F86,
 	Parameters_SetParameters_mB7DCC09F00C59DB07F26B89029942D8B6326ED01,
+	Parameters_StationSetupCheck_m40AEAB3AB5E861604E1E6A1B08A00188642DCB96,
 	Parameters__ctor_m5ED02B3440BF76F017E2037F7B6BB06524AA0EE0,
 	PlaceEquipment_Start_mF5A783D71E27541400A0E00527CE20D4B31B5532,
 	PlaceEquipment_Update_m448B822795F7E074CA468938AD9DBB220C9F18CF,
@@ -167,8 +221,26 @@ static Il2CppMethodPointer s_methodPointers[51] =
 	StationButtonManager_Update_mCBEAF6EFC90E67B8A5DD3A8C70B0A41758CE6461,
 	StationButtonManager_DisplayParameter_m020C03DEA2B60FA3DD008790CFFB3B1F02F70BE6,
 	StationButtonManager__ctor_m46FE6332C6D08332E88A934CB23A779E068272DF,
+	StationManager_Awake_m71AEE84C05E988F15C49DC161ECF6A84354F5797,
+	StationManager_SetStation_mA0CE7FD05DD2492F49C42FD51409CBB8BEA80584,
+	StationManager_GetStationName_m9124623DB7C2B3AE6A981DEB7EEF5AE3CC3A03EF,
+	StationManager_CheckStation_m6C0472AA431127C65070ED2D7FB5974871A8F99B,
+	StationManager__ctor_mF42D8D70B3DF3B5434D4C0523978DF5894C24F8C,
+	StationOptionSelect_Start_m8293B001550A0A1342EB0195EE8D163D207B7D9D,
+	StationOptionSelect_SetStation_m55F5ADF36BC39FA0A76BB9B0499BEA825D128039,
+	StationOptionSelect__ctor_m714C16A4254A6258032B1FF7BF79E7D7788C96C2,
+	Stations_get_StationID_m0105F5347ADAE6CDE8FDC25DC8CF92B6B5FC0700,
+	Stations_set_StationID_mFC46D63FD79667D7D649BA18A10DAB740567569F,
+	Stations_get_Security_m2B90DC78E62836B8081E6B2824EBC7142212DABA,
+	Stations_set_Security_m25E0A3DBDDAB0A9DB892D7A4E343FCB295D909A5,
+	Stations_get_Machine_m3311B05ED16C21ED7D96E080CDDF0E883F1FAF66,
+	Stations_set_Machine_mB7C7EA415157A5D4F5B2D5AD656CFD8205FA97B9,
+	Stations_get_Electrode_m597C019C89C1986D34D5ABA478391FF800F93775,
+	Stations_set_Electrode_m206B7D1EFBCD1C703DE4BCF5D75D4EA7C02C3FEE,
+	Stations__ctor_mB6B5469EF6B89CCE40E9FF8384AA6E7725CC8FC1,
+	Stations_MatchElectrode_mDA6660FFB57EA2F08469C998F7FF95C216322EC2,
 };
-static const int32_t s_InvokerIndices[51] = 
+static const int32_t s_InvokerIndices[75] = 
 {
 	6314,
 	5036,
@@ -202,11 +274,17 @@ static const int32_t s_InvokerIndices[51] =
 	6429,
 	6429,
 	6429,
+	6429,
+	6429,
+	6429,
+	6429,
 	11657,
+	6429,
 	6429,
 	5036,
 	5036,
 	5036,
+	6429,
 	6429,
 	6429,
 	6429,
@@ -221,12 +299,30 @@ static const int32_t s_InvokerIndices[51] =
 	6429,
 	6429,
 	6429,
+	6429,
+	2643,
+	6314,
+	3454,
+	6429,
+	6429,
+	6429,
+	6429,
+	6273,
+	4998,
+	6273,
+	4998,
+	6273,
+	4998,
+	6273,
+	4998,
+	847,
+	4119,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	51,
+	75,
 	s_methodPointers,
 	0,
 	NULL,

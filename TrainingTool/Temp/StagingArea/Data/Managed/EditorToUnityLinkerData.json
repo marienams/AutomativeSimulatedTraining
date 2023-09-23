@@ -117,6 +117,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "ParameterMenu",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Parameters",
             "moduleName": "",
             "usedInScenes": []
@@ -153,6 +160,20 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "StationButtonManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "StationManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "StationOptionSelect",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -312,7 +333,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Main.unity"
+                "Assets/Scenes/FirstMenu.unity"
             ]
         },
         {
@@ -351,6 +372,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/FirstMenu.unity",
                 "Assets/Scenes/Main.unity"
             ]
         },
@@ -504,7 +526,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Main.unity"
+                "Assets/Scenes/FirstMenu.unity"
             ]
         },
         {
@@ -522,6 +544,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/FirstMenu.unity",
                 "Assets/Scenes/Main.unity"
             ]
         },
@@ -531,6 +554,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/FirstMenu.unity",
                 "Assets/Scenes/Main.unity"
             ]
         },
@@ -577,6 +601,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/FirstMenu.unity",
                 "Assets/Scenes/Main.unity"
             ]
         },

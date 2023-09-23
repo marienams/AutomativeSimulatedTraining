@@ -403,6 +403,7 @@
 "Assets/Scripts/StationButtonManager.cs"
 "Assets/Scripts/StationManager.cs"
 "Assets/Scripts/StationOptionSelect.cs"
+"Assets/Scripts/Stations.cs"
 -langversion:9.0
 
 /deterministic

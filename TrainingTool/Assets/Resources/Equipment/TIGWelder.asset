@@ -16,6 +16,4 @@ MonoBehaviour:
     type: 3}
   equipment_icon: {fileID: 21300000, guid: 0e82e7d305705483d9abb630695d4e50, type: 3}
   Name: Transformer Welder
-  Parameters: {fileID: 3812204260234861712, guid: 6628b7e0cebb3402d8acc613c147c8dc,
-    type: 3}
-  equipmentID: 3201
+  equipmentID: 901

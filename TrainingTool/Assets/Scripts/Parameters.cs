@@ -7,12 +7,16 @@ using UnityEngine.UI;
 public class Parameters : MonoBehaviour
 {
     //[SerializeField] private Text debugText;
+    [SerializeField] private Button CheckStationSetup;
     [SerializeField] private ParameterMenu parameter_menu;
     [SerializeField]private GameObject stationContainer;
     [SerializeField] private StationButtonManager _stationButtonPrefab;
     [SerializeField] private TextMeshProUGUI stationName;
+    [SerializeField] private TextMeshProUGUI result;
     
-    private List<Equipment> equipments;
+    [SerializeField]private List<Equipment> equipments;
+
+    
 
     StationButtonManager _stationButtonManager;
 
@@ -29,7 +33,10 @@ public class Parameters : MonoBehaviour
     }
     private void Start()
     {
-        stationName.text = StationManager.Instance.GetStation();
+        CheckStationSetup = GameObject.Find("CheckBtn").GetComponent<Button>();
+
+        stationName.text = StationManager.Instance.GetStationName();
+        CheckStationSetup.onClick.AddListener(StationSetupCheck);
     }
 
     void Update()
@@ -63,9 +70,7 @@ public class Parameters : MonoBehaviour
             return;
         }
         
-        /*
-        foreach (Equipment i in equipments)
-            debugText.text = i.EquipmentSettingState;*/
+        
     }
 
     public void SetParameters(string name)
@@ -78,4 +83,27 @@ public class Parameters : MonoBehaviour
             }
         }
     }
+
+    void StationSetupCheck()
+    {
+        foreach(var equip in equipments)
+        {
+            if(StationManager.Instance.CheckStation(equip.equipmentID))
+            {
+                result.text = "Correct Setup";
+            }
+            else
+            {
+                result.text = "Try again";
+            }
+        }
+    }
+
+    /*IEnumerator ShowMessage(string message, float delay)
+    {
+        result.text = message;
+        //result.enabled = true;
+        yield return new WaitForSeconds(delay);
+        result.enabled = false;
+    }*/
 }

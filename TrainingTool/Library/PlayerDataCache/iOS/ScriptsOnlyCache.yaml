@@ -6,9 +6,12 @@ ScriptsOnlyBuild:
     - DataManager
     - Equipment
     - EquipmentButtonManager
+    - ParameterMenu
     - Parameters
     - PlaceEquipment
     - StationButtonManager
+    - StationManager
+    - StationOptionSelect
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -166,20 +169,20 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.MagicLeap.MagicLeapSettings/GLCache
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
     fullTypeName: PlaceEquipment
     methodName: AddDetection
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScene
-    methodName: MoveToScene
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScene
-    methodName: MoveToScene
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScene
-    methodName: MoveToScene
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScene
-    methodName: MoveToScene
   sceneClasses:
     Assets/Scenes/FirstMenu.unity:
     - Class: 1
@@ -190,9 +193,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -207,9 +220,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1638}
     - Class: 114
+      Script: {instanceID: 2636}
+    - Class: 114
       Script: {instanceID: 3352}
     - Class: 114
       Script: {instanceID: 4110}
+    - Class: 114
+      Script: {instanceID: 4150}
+    - Class: 114
+      Script: {instanceID: 4904}
+    - Class: 114
+      Script: {instanceID: 5118}
+    - Class: 114
+      Script: {instanceID: 5746}
+    - Class: 114
+      Script: {instanceID: 6160}
     - Class: 114
       Script: {instanceID: 7330}
     - Class: 114
@@ -219,7 +244,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9040}
     - Class: 114
+      Script: {instanceID: 9122}
+    - Class: 114
       Script: {instanceID: 9844}
+    - Class: 114
+      Script: {instanceID: 9946}
+    - Class: 114
+      Script: {instanceID: 10044}
+    - Class: 114
+      Script: {instanceID: 10104}
+    - Class: 114
+      Script: {instanceID: 52726}
+    - Class: 114
+      Script: {instanceID: 52734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -251,15 +288,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 33
       Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -280,8 +311,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1888}
     - Class: 114
-      Script: {instanceID: 2636}
-    - Class: 114
       Script: {instanceID: 2852}
     - Class: 114
       Script: {instanceID: 3352}
@@ -290,19 +319,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4110}
     - Class: 114
-      Script: {instanceID: 4150}
-    - Class: 114
       Script: {instanceID: 4388}
     - Class: 114
       Script: {instanceID: 4394}
     - Class: 114
-      Script: {instanceID: 4904}
-    - Class: 114
       Script: {instanceID: 4996}
     - Class: 114
       Script: {instanceID: 5092}
-    - Class: 114
-      Script: {instanceID: 5118}
     - Class: 114
       Script: {instanceID: 5124}
     - Class: 114
@@ -315,10 +338,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5370}
     - Class: 114
       Script: {instanceID: 5726}
-    - Class: 114
-      Script: {instanceID: 5746}
-    - Class: 114
-      Script: {instanceID: 6160}
     - Class: 114
       Script: {instanceID: 7004}
     - Class: 114
@@ -338,19 +357,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9058}
     - Class: 114
-      Script: {instanceID: 9122}
-    - Class: 114
       Script: {instanceID: 9674}
     - Class: 114
       Script: {instanceID: 9752}
     - Class: 114
       Script: {instanceID: 9802}
-    - Class: 114
-      Script: {instanceID: 9946}
-    - Class: 114
-      Script: {instanceID: 10044}
-    - Class: 114
-      Script: {instanceID: 10104}
     - Class: 114
       Script: {instanceID: 10240}
     - Class: 114
@@ -365,6 +376,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11428}
     - Class: 114
       Script: {instanceID: 11638}
+    - Class: 114
+      Script: {instanceID: 51992}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2002,7 +2015,7 @@ ScriptsOnlyBuild:
     className: BlendShapeAffordanceReceiver
   - hash:
       serializedVersion: 2
-      Hash: 9431a0213e6fe2896c6f7f413808e011
+      Hash: ce822d39fc8f2133f2feaf651e1f570d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Equipment
@@ -2116,7 +2129,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 7ebbcb05eb8564298e6e7581497a6338
+      Hash: 4bb0928313e636593c40b82532b4be14
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Parameters
@@ -2372,8 +2385,32 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 6ce4dbb67b4e6046dfca704aa7101ea3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParameterMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StationManager
+  - hash:
+      serializedVersion: 2
+      Hash: 153be835030d6c4c194280cc197f0a72
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StationOptionSelect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Stations
   platform: 9
   scenePathNames:
-  - Assets/Scenes/Main.unity
   - Assets/Scenes/FirstMenu.unity
+  - Assets/Scenes/Main.unity
   playerPath: /Users/mahimasingh/Documents/GitHub/AutomativeSimulatedTraining/TrainingTool/Builds/build

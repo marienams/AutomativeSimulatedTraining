@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class StationOptionSelect : MonoBehaviour
 {
+    //PART OF FIRST MENU 
     private Button btn;
     [SerializeField] private TextMeshProUGUI stationName;
+    [SerializeField] private int stationID;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +18,11 @@ public class StationOptionSelect : MonoBehaviour
         btn.onClick.AddListener(SetStation);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    
     void SetStation()
     {
-        StationManager.Instance.SetStation(stationName.text);
+        StationManager.Instance.SetStation(stationName.text, stationID);
     }
+    
 }

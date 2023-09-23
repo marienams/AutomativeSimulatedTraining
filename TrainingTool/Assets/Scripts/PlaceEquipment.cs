@@ -31,7 +31,7 @@ public class PlaceEquipment : ARBaseGestureInteractable
 
     private void Update()
     {
-        addEquipmentBtn.onClick.AddListener(AddDetection);
+        //addEquipmentBtn.onClick.AddListener(AddDetection);
         debugText.text = isAddingEquipment.ToString();
         
 
