@@ -80,6 +80,8 @@ public class Parameters : MonoBehaviour
             if(equipment.Name == name)
             {
                 Instantiate(parameter_menu);
+                parameter_menu.EquipPrefab = equipment.equipmentPrefab;
+                parameter_menu.EquipName = equipment.name;
             }
         }
     }
@@ -94,16 +96,30 @@ public class Parameters : MonoBehaviour
             }
             else
             {
-                result.text = "Try again";
+                result.text = "Try Again";
             }
         }
     }
 
-    /*IEnumerator ShowMessage(string message, float delay)
+    IEnumerator ShowMessage(string message, float delay)
     {
         result.text = message;
-        //result.enabled = true;
+        result.enabled = true;
         yield return new WaitForSeconds(delay);
         result.enabled = false;
-    }*/
+    }
+
+    public void DeleteEquipment(string name)
+    {
+        foreach(var i in equipments)
+        {
+            if (i.name == name)
+                equipments.Remove(i);
+        }
+    }
+
+    public void CloseParameterMenu()
+    {
+        Destroy(parameter_menu);
+    }
 }

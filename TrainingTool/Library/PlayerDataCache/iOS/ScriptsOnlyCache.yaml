@@ -23,7 +23,6 @@ ScriptsOnlyBuild:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
-    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -96,10 +95,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
-    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
@@ -123,11 +120,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
-    - TMPro.TMP_InputField/OnChangeEvent
-    - TMPro.TMP_InputField/SelectionEvent
-    - TMPro.TMP_InputField/SubmitEvent
-    - TMPro.TMP_InputField/TextSelectionEvent
-    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
@@ -181,8 +173,14 @@ ScriptsOnlyBuild:
     fullTypeName: ChangeScene
     methodName: MoveToScene
   - assembly: Assembly-CSharp
-    fullTypeName: PlaceEquipment
-    methodName: AddDetection
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScene
+    methodName: MoveToScene
   sceneClasses:
     Assets/Scenes/FirstMenu.unity:
     - Class: 1
@@ -216,47 +214,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1636}
+      Script: {instanceID: 1730}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 3376}
     - Class: 114
-      Script: {instanceID: 3352}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 4110}
+      Script: {instanceID: 4136}
     - Class: 114
-      Script: {instanceID: 4150}
+      Script: {instanceID: 4176}
     - Class: 114
-      Script: {instanceID: 4904}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 5118}
+      Script: {instanceID: 5146}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 6160}
+      Script: {instanceID: 6188}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 7358}
     - Class: 114
-      Script: {instanceID: 8256}
+      Script: {instanceID: 8284}
     - Class: 114
-      Script: {instanceID: 8480}
+      Script: {instanceID: 8506}
     - Class: 114
-      Script: {instanceID: 9040}
+      Script: {instanceID: 9066}
     - Class: 114
-      Script: {instanceID: 9122}
+      Script: {instanceID: 9148}
     - Class: 114
-      Script: {instanceID: 9844}
+      Script: {instanceID: 9714}
     - Class: 114
-      Script: {instanceID: 9946}
+      Script: {instanceID: 9872}
     - Class: 114
-      Script: {instanceID: 10044}
+      Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 10104}
+      Script: {instanceID: 10072}
     - Class: 114
-      Script: {instanceID: 52726}
+      Script: {instanceID: 10132}
     - Class: 114
-      Script: {instanceID: 52734}
+      Script: {instanceID: 10442}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -301,83 +299,79 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1694}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 1730}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1852}
     - Class: 114
-      Script: {instanceID: 1830}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 3376}
     - Class: 114
-      Script: {instanceID: 3352}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3982}
+      Script: {instanceID: 4008}
     - Class: 114
-      Script: {instanceID: 4110}
+      Script: {instanceID: 4136}
     - Class: 114
-      Script: {instanceID: 4388}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 4394}
+      Script: {instanceID: 4422}
     - Class: 114
-      Script: {instanceID: 4996}
+      Script: {instanceID: 5024}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 5120}
     - Class: 114
-      Script: {instanceID: 5124}
+      Script: {instanceID: 5152}
     - Class: 114
-      Script: {instanceID: 5264}
+      Script: {instanceID: 5292}
     - Class: 114
-      Script: {instanceID: 5298}
+      Script: {instanceID: 5326}
     - Class: 114
-      Script: {instanceID: 5356}
+      Script: {instanceID: 5384}
     - Class: 114
-      Script: {instanceID: 5370}
+      Script: {instanceID: 5398}
     - Class: 114
-      Script: {instanceID: 5726}
+      Script: {instanceID: 7238}
     - Class: 114
-      Script: {instanceID: 7004}
+      Script: {instanceID: 7358}
     - Class: 114
-      Script: {instanceID: 7210}
+      Script: {instanceID: 7734}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 8284}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 8326}
     - Class: 114
-      Script: {instanceID: 8256}
+      Script: {instanceID: 8506}
     - Class: 114
-      Script: {instanceID: 8300}
+      Script: {instanceID: 8808}
     - Class: 114
-      Script: {instanceID: 8480}
+      Script: {instanceID: 9084}
     - Class: 114
-      Script: {instanceID: 8782}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9058}
+      Script: {instanceID: 9780}
     - Class: 114
-      Script: {instanceID: 9674}
+      Script: {instanceID: 9830}
     - Class: 114
-      Script: {instanceID: 9752}
+      Script: {instanceID: 9872}
     - Class: 114
-      Script: {instanceID: 9802}
+      Script: {instanceID: 10268}
     - Class: 114
-      Script: {instanceID: 10240}
+      Script: {instanceID: 10756}
     - Class: 114
-      Script: {instanceID: 10726}
+      Script: {instanceID: 10798}
     - Class: 114
-      Script: {instanceID: 10768}
+      Script: {instanceID: 10854}
     - Class: 114
-      Script: {instanceID: 10824}
+      Script: {instanceID: 10892}
     - Class: 114
-      Script: {instanceID: 10862}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11428}
-    - Class: 114
-      Script: {instanceID: 11638}
-    - Class: 114
-      Script: {instanceID: 51992}
+      Script: {instanceID: 11668}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -398,19 +392,66 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
+    Assets/Scenes/Welding Process Guide.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1730}
+    - Class: 114
+      Script: {instanceID: 3376}
+    - Class: 114
+      Script: {instanceID: 3682}
+    - Class: 114
+      Script: {instanceID: 4136}
+    - Class: 114
+      Script: {instanceID: 7238}
+    - Class: 114
+      Script: {instanceID: 7358}
+    - Class: 114
+      Script: {instanceID: 8284}
+    - Class: 114
+      Script: {instanceID: 8506}
+    - Class: 114
+      Script: {instanceID: 9066}
+    - Class: 114
+      Script: {instanceID: 9780}
+    - Class: 114
+      Script: {instanceID: 9872}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -435,6 +476,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPlane
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: c24a778d9aa393e11e54bff320ca63de
@@ -641,6 +688,12 @@ ScriptsOnlyBuild:
     className: TeleportationAnchor
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParameterMenu
+  - hash:
+      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -771,6 +824,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.Hands
     className: HandExpressionCapture
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 9184d70d9a8e77271d3ce8807eaa7ce0
@@ -921,6 +980,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Stations
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1571,7 +1636,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 77eb6b0464a4c25c38d20d1c53b7c9ad
+      Hash: af0b60cf22f335cdabf387bd70a372ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaceEquipment
@@ -1907,6 +1972,12 @@ ScriptsOnlyBuild:
     className: InputActionReference
   - hash:
       serializedVersion: 2
+      Hash: 153be835030d6c4c194280cc197f0a72
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StationOptionSelect
+  - hash:
+      serializedVersion: 2
       Hash: 7bb1a43aac3f728eeaaca3eb6957bf1f
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Inputs
@@ -2103,6 +2174,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.OpenXR.Features.MockRuntime.dll
     namespaceName: UnityEngine.XR.OpenXR.Features.Mock
     className: MockRuntime
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StationManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -2385,32 +2462,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 6ce4dbb67b4e6046dfca704aa7101ea3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ParameterMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StationManager
-  - hash:
-      serializedVersion: 2
-      Hash: 153be835030d6c4c194280cc197f0a72
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StationOptionSelect
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Stations
   platform: 9
   scenePathNames:
   - Assets/Scenes/FirstMenu.unity
   - Assets/Scenes/Main.unity
+  - Assets/Scenes/Welding Process Guide.unity
   playerPath: /Users/mahimasingh/Documents/GitHub/AutomativeSimulatedTraining/TrainingTool/Builds/build

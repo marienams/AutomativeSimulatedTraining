@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: bfa6f90936ed049c0b11c90ba8bd83f0
+  - enabled: 1
+    path: Assets/Scenes/Welding Process Guide.unity
+    guid: 64ba595d238d14e6fba9a025793f2393
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

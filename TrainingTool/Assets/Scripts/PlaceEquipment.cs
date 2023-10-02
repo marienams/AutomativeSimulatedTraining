@@ -20,19 +20,18 @@ public class PlaceEquipment : ARBaseGestureInteractable
     private Pose pose;
 
     bool isAddingEquipment;
-    [SerializeField] private Button addEquipmentBtn;
-    [SerializeField] private Text debugText;
+    //[SerializeField] private Button addEquipmentBtn;
+    //[SerializeField] private Text debugText;
 
     private void Start()
     {
-        addEquipmentBtn = GetComponent<Button>();
+        
         isAddingEquipment = true;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
     {
-        //addEquipmentBtn.onClick.AddListener(AddDetection);
-        debugText.text = isAddingEquipment.ToString();
         
 
     }
@@ -61,7 +60,7 @@ public class PlaceEquipment : ARBaseGestureInteractable
             var hitPose = hits[0].pose;
             GameObject placeObj = Instantiate(DataManager.Instance.GetEquipment(), hitPose.position, hitPose.rotation);
             isAddingEquipment = false;
-            debugText.text = isAddingEquipment.ToString();
+            
             var anchorObj = new GameObject("PlacementAnchor");
             anchorObj.transform.position = pose.position;
             anchorObj.transform.rotation = pose.rotation;

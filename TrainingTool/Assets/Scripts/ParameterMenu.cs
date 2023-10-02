@@ -1,26 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ParameterMenu : MonoBehaviour
 {
-    [SerializeField]private Button finishButton; 
-    // Start is called before the first frame update
-    void Start()
+    private Button delete;
+    private Button finish;
+    private TextMeshProUGUI equipNameDisplay;
+
+    private GameObject equipPrefab;
+    public GameObject EquipPrefab
     {
-        finishButton = GetComponent<Button>();
-        finishButton.onClick.AddListener(Finish);
+        set
+        {
+            equipPrefab = value;
+        }
+    }
+    private string equipName;
+    public string EquipName
+    {
+        set
+        {
+            equipName = value;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        equipNameDisplay = GameObject.Find("EquipmentName").GetComponent<TextMeshProUGUI>();
+        equipNameDisplay.text = equipName;
+        delete = GameObject.Find("Delete").GetComponent<Button>();
+        delete.onClick.AddListener(DeleteEquipment);
+        finish = GameObject.Find("Finish").GetComponent<Button>();
+        finish.onClick.AddListener(CloseParameterMenu);
     }
 
-    void Finish()
+    void DeleteEquipment()
     {
-        
+        Destroy(equipPrefab);
+        Parameters.Instance.DeleteEquipment(equipName);
     }
+
+    void CloseParameterMenu()
+    {
+        Parameters.Instance.CloseParameterMenu();
+        Destroy(this);
+
+    }
+
 }
